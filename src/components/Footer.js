@@ -58,7 +58,7 @@ export default Footer;
 const Container = styled.div`
   padding: 0;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 54px;
   height: 538px;
   font-family: 'Poppins', sans-serif;
   background-color: black;
@@ -66,7 +66,7 @@ const Container = styled.div`
   display: flex;
   flex-shrink: 0;
   justify-content: space-around;
-  postion : relative;
+  position: relative;
 `;
 
 const LogoContainer = styled.div`
@@ -126,13 +126,13 @@ const EmailInput = styled.div`
 `;
 
 const Button = styled.button`
-    position: absolute;
-    left: 380px;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    cursor: pointer;
+  position: absolute;
+  left: 380px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  cursor: pointer;
 
   svg {
     fill: white;
@@ -168,11 +168,10 @@ const Section = styled.div`
 `;
 
 const Seperator = styled.div`
-    position: absolute;
-    top:450px;
-    width: 100%;
-    height: 1px;
-    background-color: #FFF;
-    
-
+  position: absolute;
+  top: 480px;
+  width: 100%;
+  height: 1px;
+  background-color: #FFF;
+    opacity: 0.3;
 `;
