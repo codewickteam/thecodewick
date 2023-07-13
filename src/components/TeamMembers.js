@@ -50,6 +50,8 @@ const TeamMembers = () => {
           />
         ))}
       </CardsContainer>
+      <Eliptical />
+      <Eliptical2 />
     </Container>
   );
 };
@@ -62,6 +64,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  position: relative;
 `;
 
 const Header = styled.div`
@@ -92,6 +95,7 @@ const Header = styled.div`
 
   p {
     color: #000;
+    width: 1213px;
     text-align: center;
     font-family: Poppins;
     font-size: 28px;
@@ -108,3 +112,26 @@ const CardsContainer = styled.div`
   margin-top: 20px;
   padding: 10px;
 `;
+
+const Eliptical = styled.div`
+position :absolute;
+  width: 622px;
+  height: 622px;
+  flex-shrink: 0;
+  border-radius: 622px;
+  border: 2px dashed #000;
+  left:-351px;
+  bottom:-467px;
+`;
+const Eliptical2 = styled.div`
+position :absolute;
+  width: 622px;
+  height: 622px;
+  flex-shrink: 0;
+  border-radius: 622px;
+  border: 2px dashed #000;
+  right:-291px;
+  top:70px;
+  z-index:-99
+  
+ `;

@@ -106,6 +106,7 @@ const Header = styled.div`
 
   p {
     color: #000;
+    width: 1213px;
     text-align: center;
     font-family: Poppins;
     font-size: 28px;
