@@ -3,6 +3,7 @@ import Home from './pages/Home.js';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Bottom from './bottom.js';
+import Middle from './Middle.js';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/home' element={<Home/>} />
         </Routes>
+        <Middle/>
         <Bottom/>
         <Footer/>
       </Router>
