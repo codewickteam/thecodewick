@@ -6,30 +6,84 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <Container>
-      <div className="container">
-        <Link to='/'><img src={wicklogo} alt="" className="logo" /></Link>
+      <div className="container flex a-center j-center">
+        <Link to='/' className='logo'><img src={wicklogo} alt="" className="logo" /></Link>
 
-        <ul>
-          <Link className='link' to='/'><li>Home</li></Link>
-          <Link to='/'><li>Services</li></Link>
-          <Link to='/'><li>Pricing</li></Link>
-          <Link to='/'><li>Features</li></Link>
-          <Link to='/'><li>FAQs</li></Link>
-        </ul>
+      <div className="links flex">
+        <Link className='link' to='/'>Home</Link>
+        <Link className='link' to='/'>Services</Link>
+        <Link className='link' to='/'>Pricing</Link>
+        <Link className='link' to='/'>Features</Link>
+        <Link className='link' to='/'>FAQs</Link>
+      </div>
 
-        <div className="btn">
-          <div className="btn-text">
-            <Link to='/'>Contact</Link>
-          </div>
+      <Link className='btn flex a-center j-center' to='/'>
+        <div className="btn-text flex">
+            Contact
         </div>
+        </Link>
       </div>
     </Container>
   )
 }
 
 const Container = styled.div`
-  ul{
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  padding-top: 59px;
+
+  .flex{
+    display: flex;
+  }
+  .a-center{
+    align-items: center;
+  }
+  .j-center{
+    justify-content: center;
+  }
+
+
+  
+  a{
     text-decoration: none;
   }
+  .logo{
+    width: 220px;
+    height: 42px;
+    margin-right: 149px;
+  }
+  .link{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .links{
+    gap: 110px;
+  }
+
+
+
+  .btn{
+    margin-left: 188px;
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    background: #100E2D;
+  }
+  
+  .btn-text{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+
 `
