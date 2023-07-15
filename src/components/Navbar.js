@@ -30,7 +30,6 @@ export default function Navbar() {
 const Container = styled.div`
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
   padding-top: 59px;
 
   .flex{
@@ -83,6 +82,7 @@ const Container = styled.div`
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
+    padding: 8px 38px;
   }
 
 
