@@ -4,6 +4,8 @@ import TeamMembersCard from "./TeamMembersCard";
 import Rect17 from '../assets/Rect17.png';
 import Rect18 from '../assets/Rect18.png';
 import Rect19 from '../assets/Rect19.png';
+import eRight from '../assets/Ellipse 35.png';
+import eLeft from '../assets/Ellipse 34.png';
 
 
 const data = [
@@ -50,7 +52,9 @@ const TeamMembers = () => {
           />
         ))}
       </CardsContainer>
-      <Eliptical />
+      <img className="eRight" src={eRight} alt="" />
+      <img className="eLeft" src={eLeft} alt="" />
+      {/* <Eliptical /> */}
       {/* <Eliptical2 /> */}
     </Container>
   );
@@ -65,6 +69,21 @@ const Container = styled.div`
   flex-direction: column;
   margin-top: 100px;
   position: relative;
+
+  .eRight{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.eLeft{
+  position: absolute;
+  bottom: -500px;
+  z-index: -1;
+  pointer-events: none;
+  }
 `;
 
 const Header = styled.div`
