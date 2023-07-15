@@ -127,7 +127,7 @@ const EmailInput = styled.div`
 
 const Button = styled.button`
   position: absolute;
-  left: 380px;
+  left: 350px;
   border-radius: 100%;
   width: 50px;
   height: 50px;
