@@ -51,7 +51,7 @@ const TeamMembers = () => {
         ))}
       </CardsContainer>
       <Eliptical />
-      <Eliptical2 />
+      {/* <Eliptical2 /> */}
     </Container>
   );
 };
