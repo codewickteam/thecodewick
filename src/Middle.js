@@ -1,10 +1,10 @@
 import React from 'react'
-import Services from './components/Services'
+import Services2 from './components/Services2'
 
 function Middle() {
   return (
     <div>
-      <Services/>
+      <Services2/>
     </div>
   )
 }
