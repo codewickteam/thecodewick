@@ -1,8 +1,8 @@
 import React from 'react';
-import Top from '../components/Top.js';
-import MasterInTechnology from '../components/MasterInTechnology.js';
-import TeamMembers from '../components/TeamMembers.js';
-import Services2 from '../components/Services2.js';
+import Top from '../components/Home/Top.js';
+import MasterInTechnology from '../components/Home/MasterInTechnology.js';
+import TeamMembers from '../components/Home/TeamMembers.js';
+import Services2 from '../components/Home/Services2.js';
 
 const Home = () => {
   return (

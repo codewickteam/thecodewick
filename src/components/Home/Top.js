@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import Banner from "./Banner";
-import ellipse35 from "../assets/Ellipse 35.png"
-import ellipse34 from "../assets/Ellipse 34.png"
+import ellipse35 from "../../assets/Ellipse 35.png"
+import ellipse34 from "../../assets/Ellipse 34.png"
 
 export default function Top() {
   return (

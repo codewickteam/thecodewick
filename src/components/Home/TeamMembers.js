@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import TeamMembersCard from "./TeamMembersCard";
-import Rect17 from '../assets/Rect17.png';
-import Rect18 from '../assets/Rect18.png';
-import Rect19 from '../assets/Rect19.png';
-import eRight from '../assets/Ellipse 36.png';
-import eLeft from '../assets/Ellipse 37.png';
+import Rect17 from '../../assets/Rect17.png';
+import Rect18 from '../../assets/Rect18.png';
+import Rect19 from '../../assets/Rect19.png';
+import eRight from '../../assets/Ellipse 36.png';
+import eLeft from '../../assets/Ellipse 37.png';
 
 
 const data = [

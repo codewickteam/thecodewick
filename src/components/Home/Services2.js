@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import ServicesCard from "./ServicesCard";
-import Ellipse13 from '../assets/Ellipse 13.png'
-import Ellipse14 from '../assets/Ellipse 14.png'
-import Ellipse15 from '../assets/Ellipse 16.png'
-import Ellipse16 from '../assets/Ellipse 16.png'
-import Ellipse17 from '../assets/Ellipse 17.png'
-import Ellipse18 from '../assets/Ellipse 18.png'
-import Ellipse19 from '../assets/Ellipse 19.png'
-import quo from '../assets/quo.png';
+import Ellipse13 from '../../assets/Ellipse 13.png'
+import Ellipse14 from '../../assets/Ellipse 14.png'
+import Ellipse15 from '../../assets/Ellipse 16.png'
+import Ellipse16 from '../../assets/Ellipse 16.png'
+import Ellipse17 from '../../assets/Ellipse 17.png'
+import Ellipse18 from '../../assets/Ellipse 18.png'
+import Ellipse19 from '../../assets/Ellipse 19.png'
+import quo from '../../assets/quo.png';
 
 
 const data = [
