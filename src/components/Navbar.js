@@ -11,7 +11,7 @@ export default function Navbar() {
         <Link to='/' className='logo'><img src={wicklogo} alt="" className="logo" /></Link>
         </div>
 
-      <div className="links flex">
+      <div className="links flex j-between">
         <Link className='link' to='/'>Home</Link>
         <Link className='link' to='/'>Services</Link>
         <Link className='link' to='/'>Pricing</Link>
@@ -35,9 +35,6 @@ const Container = styled.div`
   width: 100%;
   padding-top: 59px;
   display: flex;
-  /* justify-content: space-evenly; */
-  /* max-width:2000px; */
-
 
 .container{
   max-width: 1728px;
@@ -79,7 +76,8 @@ const Container = styled.div`
   }
 
   .links{
-    gap: 110px;
+    /* gap: 110px; */
+    width: 860px;
   }
 
 
