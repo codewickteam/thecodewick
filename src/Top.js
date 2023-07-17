@@ -7,7 +7,7 @@ import ellipse34 from "./assets/Ellipse 34.png"
 
 export default function Top() {
   return (
-    <Container>
+    <Container className="wrapper">
       <div className="comp1 flex a-center j-center flex-col">
         <div className="title1 flex flex-col a-center">
           <span className="title1-text">Imagine.</span>
@@ -28,12 +28,12 @@ export default function Top() {
         <img className="ellipse34" src={ellipse34} alt="" />
       </div>
 
-      <div className="comp2">
+      <div className="comp2 ">
         <div className="title2">
           Top Brands <span className="title2-span">Trust Us</span>
         </div>
 
-        <div className="stats2 flex j-center">
+        <div className="stats2 flex j-between">
           <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
@@ -49,7 +49,7 @@ export default function Top() {
                 <div className="ring-text-left">14+</div>
               </div>
             </div>
-            <div className="stats-txt">Projects Launched</div>
+            <div className="stats-txt">Years of Experience</div>
           </div>
 
           <div className="flex flex-col a-center">
@@ -58,7 +58,7 @@ export default function Top() {
                 <div className="ring-text-right">575+</div>
               </div>
             </div>
-            <div className="stats-txt">Projects Launched</div>
+            <div className="stats-txt">Dedicated Developers</div>
           </div>
 
           <div className="flex flex-col a-center">
@@ -67,7 +67,7 @@ export default function Top() {
                 <div className="ring-text-right">92%</div>
               </div>
             </div>
-            <div className="stats-txt">Projects Launched</div>
+            <div className="stats-txt">Client Retention</div>
           </div>
         </div>
 
@@ -92,6 +92,9 @@ export default function Top() {
 }
 
 const Container = styled.div`
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   .flex {
     display: flex;
   }
@@ -103,6 +106,9 @@ const Container = styled.div`
   }
   .flex-col {
     flex-direction: column;
+  }
+  .j-between {
+    justify-content: space-between;
   }
 
   a {
@@ -168,6 +174,10 @@ const Container = styled.div`
     font-weight: 600;
     line-height: normal;
   }
+
+  .comp2{
+    /* width: 100%; */
+  }
   .title2 {
     color: #000;
     text-align: center;
@@ -191,7 +201,9 @@ const Container = styled.div`
   }
 
   .stats2 {
-    gap: 155px;
+    /* gap: 155px; */
+    padding: 0 32px;
+    /* width: 300px; */
     padding-bottom: 117px;
   }
   .red-ring {
@@ -243,8 +255,10 @@ const Container = styled.div`
   }
   .band4{
     height: 278px;
+    width: 100%;
     background: #D9D9D9;
     margin-bottom: 202px;
+    position: relative;
   }
 
 
