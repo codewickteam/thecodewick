@@ -78,6 +78,7 @@ const Container = styled.div`
   .links{
     /* gap: 110px; */
     width: 860px;
+    margin: 0 30px;
   }
 
 
