@@ -54,8 +54,6 @@ const TeamMembers = () => {
       </CardsContainer>
       <img className="eRight" src={eRight} alt="" />
       <img className="eLeft" src={eLeft} alt="" />
-      {/* <Eliptical /> */}
-      {/* <Eliptical2 /> */}
     </Container>
   );
 };
@@ -132,25 +130,3 @@ const CardsContainer = styled.div`
   padding: 10px;
 `;
 
-const Eliptical = styled.div`
-position :absolute;
-  width: 622px;
-  height: 622px;
-  flex-shrink: 0;
-  border-radius: 622px;
-  border: 2px dashed #000;
-  left:-351px;
-  bottom:-467px;
-`;
-const Eliptical2 = styled.div`
-position :absolute;
-  width: 622px;
-  height: 622px;
-  flex-shrink: 0;
-  border-radius: 622px;
-  border: 2px dashed #000;
-  right:-291px;
-  top:70px;
-  z-index:-99
-  
- `;
