@@ -13,16 +13,16 @@ const ServicesCard = ({ imageUrl, name }) => {
 export default ServicesCard;
 
 const Container = styled.div`
-  width: 495px;
+  width: 465px;
   height: 336px;
   flex-shrink: 0;
   border-radius: 20px;
-  border: 2px solid #000;
-  display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+  border: 2px solid #afadad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   img {
     width: 130px;
     height: 130px;
@@ -35,8 +35,9 @@ const Container = styled.div`
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
+    margin-top: 15px;
   }
   span {
     color: #000;

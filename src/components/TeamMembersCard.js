@@ -27,8 +27,8 @@ const Container = styled.div`
   margin-bottom:100px;
   margin-top:50px;
   img {
-    width: 490px;
-    height: 591px;
+    width: 420px;
+    height: 540px;
     flex-shrink: 0;
     border-radius: 20px;
   }

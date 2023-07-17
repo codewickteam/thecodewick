@@ -13,10 +13,10 @@ export default function Navbar() {
 
       <div className="links flex j-between">
         <Link className='link' to='/'>Home</Link>
-        <Link className='link' to='/'>Services</Link>
-        <Link className='link' to='/'>Pricing</Link>
-        <Link className='link' to='/'>Features</Link>
-        <Link className='link' to='/'>FAQs</Link>
+        <Link className='link' to='/services'>Services</Link>
+        <Link className='link' to='/about'>About Us</Link>
+        <Link className='link' to='/casestudy'>Case Study</Link>
+        <Link className='link' to='/blog'>Blog</Link>
       </div>
 
       <Link className='btn flex a-center j-center' to='/'>

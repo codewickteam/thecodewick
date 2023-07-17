@@ -48,7 +48,6 @@ function Footer() {
         <Link to="/">Digital Transfomation</Link>
         <Link to="/">Cloud Computing</Link>
       </Section>
-      <Seperator/>
     </Container>
   );
 }
@@ -59,7 +58,7 @@ const Container = styled.div`
   padding: 0;
   margin: 0;
   padding-top: 54px;
-  height: 538px;
+  height: 520px;
   font-family: 'Poppins', sans-serif;
   background-color: black;
   color: white;
@@ -165,13 +164,4 @@ const Section = styled.div`
     text-decoration: none;
     opacity: 0.7;
   }
-`;
-
-const Seperator = styled.div`
-  position: absolute;
-  top: 480px;
-  width: 100%;
-  height: 1px;
-  background-color: #FFF;
-    opacity: 0.3;
 `;

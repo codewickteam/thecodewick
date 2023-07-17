@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Top from '../Top.js';
+import Bottom from '../bottom.js';
+import Middle from '../Middle.js';
 
 const Home = () => {
   return (
     <div>
-      home
+      <Top/>
+      <Middle/>
+      <Bottom/>
     </div>
   )
 }

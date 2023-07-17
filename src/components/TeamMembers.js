@@ -61,8 +61,8 @@ const TeamMembers = () => {
 export default TeamMembers;
 
 const Container = styled.div`
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -70,8 +70,7 @@ const Container = styled.div`
 
   .eRight{
   position: absolute;
-  top: 0;
-  right: 0;
+  right: -100px;
   z-index: -1;
   pointer-events: none;
 }
@@ -79,6 +78,7 @@ const Container = styled.div`
 .eLeft{
   position: absolute;
   bottom: -500px;
+  left: -60px;
   z-index: -1;
   pointer-events: none;
   }
@@ -113,6 +113,7 @@ const Header = styled.div`
   p {
     color: #000;
     width: 1213px;
+    padding-top:10px;
     text-align: center;
     font-family: Poppins;
     font-size: 28px;
