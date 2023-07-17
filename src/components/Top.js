@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import Banner from "./components/Banner";
-import ellipse35 from "./assets/Ellipse 35.png"
-import ellipse34 from "./assets/Ellipse 34.png"
+import Banner from "./Banner";
+import ellipse35 from "../assets/Ellipse 35.png"
+import ellipse34 from "../assets/Ellipse 34.png"
 
 export default function Top() {
   return (
@@ -121,7 +121,7 @@ const Container = styled.div`
   .ellipse34{
     position: absolute;
     margin-top: 433px;
-    left: 0;
+    left: -50px;
     bottom: 0;
     top: 0;
     pointer-events: none;
@@ -129,7 +129,7 @@ const Container = styled.div`
   .ellipse35{
     position: absolute;
     margin-top: 158px;
-    right: 0;
+    right: -50px;
     bottom: 0;
     top: 0;
     pointer-events: none;

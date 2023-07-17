@@ -1,14 +1,16 @@
 import React from 'react';
-import Top from '../Top.js';
-import Bottom from '../bottom.js';
-import Middle from '../Middle.js';
+import Top from '../components/Top.js';
+import MasterInTechnology from '../components/MasterInTechnology.js';
+import TeamMembers from '../components/TeamMembers.js';
+import Services2 from '../components/Services2.js';
 
 const Home = () => {
   return (
     <div>
       <Top/>
-      <Middle/>
-      <Bottom/>
+      <Services2/>
+      <MasterInTechnology/>
+      <TeamMembers/>
     </div>
   )
 }
