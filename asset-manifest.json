@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a8809c2.css",
-    "main.js": "/static/js/main.bab98ead.js",
-    "static/media/img_1.png": "/static/media/img_1.467104ca865862448a0e.png",
-    "static/media/img_3.png": "/static/media/img_3.13ba98031f6b12fb6e2d.png",
-    "static/media/img_2.png": "/static/media/img_2.975db05a6200d89e2413.png",
-    "static/media/Rect17.png": "/static/media/Rect17.0b54c172d2452f9cd9f8.png",
-    "static/media/Rect18.png": "/static/media/Rect18.07058bc881f7e8dcde01.png",
-    "static/media/Rect19.png": "/static/media/Rect19.782a3dda890bbc1d4878.png",
-    "static/media/image8.png": "/static/media/image8.1308f63a80eca0fe9777.png",
-    "static/media/codewick-logo.png": "/static/media/codewick-logo.f59c314b1a61aefeaa89.png",
-    "static/media/image 3.png": "/static/media/image 3.688b0b56d9299c254908.png",
-    "index.html": "/index.html",
-    "main.9a8809c2.css.map": "/static/css/main.9a8809c2.css.map",
-    "main.bab98ead.js.map": "/static/js/main.bab98ead.js.map"
+    "main.css": "/thecodewick/static/css/main.9a8809c2.css",
+    "main.js": "/thecodewick/static/js/main.5d7de2a6.js",
+    "static/media/img_1.png": "/thecodewick/static/media/img_1.467104ca865862448a0e.png",
+    "static/media/img_3.png": "/thecodewick/static/media/img_3.13ba98031f6b12fb6e2d.png",
+    "static/media/img_2.png": "/thecodewick/static/media/img_2.975db05a6200d89e2413.png",
+    "static/media/Rect17.png": "/thecodewick/static/media/Rect17.0b54c172d2452f9cd9f8.png",
+    "static/media/Rect18.png": "/thecodewick/static/media/Rect18.07058bc881f7e8dcde01.png",
+    "static/media/Rect19.png": "/thecodewick/static/media/Rect19.782a3dda890bbc1d4878.png",
+    "static/media/image8.png": "/thecodewick/static/media/image8.1308f63a80eca0fe9777.png",
+    "static/media/codewick-logo.png": "/thecodewick/static/media/codewick-logo.f59c314b1a61aefeaa89.png",
+    "static/media/image 3.png": "/thecodewick/static/media/image 3.688b0b56d9299c254908.png",
+    "index.html": "/thecodewick/index.html",
+    "main.9a8809c2.css.map": "/thecodewick/static/css/main.9a8809c2.css.map",
+    "main.5d7de2a6.js.map": "/thecodewick/static/js/main.5d7de2a6.js.map"
   },
   "entrypoints": [
     "static/css/main.9a8809c2.css",
-    "static/js/main.bab98ead.js"
+    "static/js/main.5d7de2a6.js"
   ]
 }
