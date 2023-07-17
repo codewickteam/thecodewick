@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <Container>
-      <div className="container flex a-center j-center">
+      <div className="container flex a-center j-between">
+        <div className="logo box">
         <Link to='/' className='logo'><img src={wicklogo} alt="" className="logo" /></Link>
+        </div>
 
       <div className="links flex">
         <Link className='link' to='/'>Home</Link>
@@ -30,8 +32,16 @@ export default function Navbar() {
 const Container = styled.div`
   margin: 0;
   padding: 0;
+  width: 100%;
   padding-top: 59px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* max-width:2000px; */
 
+
+.container{
+  max-width: 1728px;
+}
   .flex{
     display: flex;
   }
@@ -40,6 +50,12 @@ const Container = styled.div`
   }
   .j-center{
     justify-content: center;
+  }
+  .j-evenly{
+    justify-content: space-evenly;
+  }
+  .j-between{
+    justify-content: space-between;
   }
 
 
@@ -50,7 +66,7 @@ const Container = styled.div`
   .logo{
     width: 220px;
     height: 42px;
-    margin-right: 149px;
+    /* margin-right: 149px; */
   }
   .link{
     color: #000;
@@ -69,7 +85,7 @@ const Container = styled.div`
 
 
   .btn{
-    margin-left: 188px;
+    /* margin-left: 188px; */
     width: 160px;
     height: 45px;
     border-radius: 30px;
