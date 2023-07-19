@@ -7,26 +7,26 @@ const TopAboutUs = () => {
     <Container>
       <h1>About Us From Us</h1>
       <p>
-        As a Web Development Service are commited to building custom website
+        As a Web Development Service are committed to building custom website
         solutions that drive business towards success.
       </p>
-      <div>
+      <Left>
         <img src={Rectangle30} alt="Rectangle30" />
         <span>
-          <p className="p1">
+          <Paragraph>
             Outsource software development with Codewick leveraging an array of
             IT technologies for all company sizes. The right technology stack
             can significantly reduce the total cost of ownership & scale up your
             business.
-          </p>
-          <p className="p2">
+          </Paragraph>
+          <Paragraph>
             Our team of tech strategists, enterprise architects & transformation
             experts help harness technology & innovation as a way to reinvent
             every business.
-          </p>
+          </Paragraph>
           <button>Get in touch</button>
         </span>
-      </div>
+      </Left>
     </Container>
   );
 };
@@ -37,60 +37,70 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 12.5rem; /* 200px / 16 = 12.5rem */
   h1 {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* 64px / 16 = 4rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
   p {
-    width: 981px;
+    width: 61.3125rem; /* 981px / 16 = 61.3125rem */
     color: #000;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px / 16 = 1.25rem */
     text-align: center;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 1.375rem; /* 22px / 16 = 1.375rem */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    opacity: 0.699999988079071;
+    opacity: 0.7; /* No need to convert opacity */
   }
-  div {
+`;
+
+const Left = styled.div`
+  display: flex;
+  margin-top: 6.25rem; /* 100px / 16 = 6.25rem */
+  img {
+    /* width: 37.5rem; */ /* Commented out as it's not using rem units */
+    height: 25rem; /* 400px / 16 = 25rem */
+    flex-shrink: 0;
+    border-radius: 1.25rem; /* 20px / 16 = 1.25rem */
+    padding: 0 1.875rem 0 4.3125rem; /* 0 20px / 16 = 0 1.875rem, 69px / 16 = 4.3125rem */
+  }
+  span {
     display: flex;
-    margin-top: 100px;
-    img {
-      width: 600px;
-      height: 400px;
-      flex-shrink: 0;
-      border-radius: 20px;
-      padding: 0 20px 0 50px;
-    }
-    .p1 p2 {
-      color: #000;
-      width: 700px;
-      font-family: Poppins;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      opacity: 0.699999988079071;
-    }
-    button {
-      width: 241px;
-      height: 78px;
-      flex-shrink: 0;
-      border-radius: 10px;
-      border: 2px solid #000;
-      color: #000;
-      font-family: Poppins;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5rem 0 3.125rem; /* 0 80px / 16 = 0 5rem, 50px / 16 = 3.125rem */
   }
+  button {
+    width: 15.0625rem; /* 241px / 16 = 15.0625rem */
+    height: 4.875rem; /* 78px / 16 = 4.875rem */
+    flex-shrink: 0;
+    border-radius: 0.625rem; /* 10px / 16 = 0.625rem */
+    border: 0.125rem solid #000; /* 2px / 16 = 0.125rem */
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.375rem; /* 22px / 16 = 1.375rem */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color:white;
+  }
+`;
+
+const Paragraph = styled.div`
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.375rem; /* 22px / 16 = 1.375rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.7; /* No need to convert opacity */
+  max-width: 62.5rem; /* 1000px / 16 = 62.5rem */
+  min-width: 25rem; /* 400px / 16 = 25rem */
 `;
