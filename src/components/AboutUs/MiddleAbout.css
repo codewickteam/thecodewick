@@ -1,0 +1,19 @@
+.middle{
+    margin-top: 100px;
+}
+
+.box_1{
+    display: flex;
+    justify-content: center;
+}
+
+.box_2{
+    display: flex;
+    justify-content: center;
+    opacity: 0.699999988079071;
+    font-size: 10px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
