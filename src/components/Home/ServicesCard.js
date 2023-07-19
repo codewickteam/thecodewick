@@ -13,37 +13,37 @@ const ServicesCard = ({ imageUrl, name }) => {
 export default ServicesCard;
 
 const Container = styled.div`
-  width: 465px;
-  height: 336px;
+  width: 29.0625rem; /* Convert 465px to rem */
+  height: 21rem; /* Convert 336px to rem */
   flex-shrink: 0;
-  border-radius: 20px;
-  border: 2px solid #afadad;
+  border-radius: 1.25rem; /* Convert 20px to rem */
+  border: 0.125rem solid #afadad; /* Convert 2px to rem */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 130px;
-    height: 130px;
+    width: 8.125rem; /* Convert 130px to rem */
+    height: 8.125rem; /* Convert 130px to rem */
     flex-shrink: 0;
-    border-radius: 130px;
+    border-radius: 8.125rem; /* Convert 130px to rem */
   }
   h2 {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 2.25rem; /* Convert 36px to rem */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 15px;
+    margin-top: 0.9375rem; /* Convert 15px to rem */
   }
   span {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem; /* Convert 24px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;

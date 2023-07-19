@@ -49,6 +49,7 @@ const data = [
   },
 ];
 
+
 const Services2 = () => {
   return (
     <Container>
@@ -80,11 +81,11 @@ const Services2 = () => {
 export default Services2;
 
 const Container = styled.div`
-  margin: 20px;
-  padding: 20px;
+  margin: 1.25rem; /* Convert 20px to rem */
+  padding: 1.25rem; /* Convert 20px to rem */
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 6.25rem; /* Convert 100px to rem */
   position: relative;
 `;
 
@@ -94,13 +95,13 @@ const Header = styled.div`
   align-items: center;
 
   .header {
-    width:900px;
+    width: 56.25rem; /* Convert 900px to rem */
   }
   div {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -110,41 +111,36 @@ const Header = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Poppins;
-      font-size: 64px;
+      font-size: 4rem; /* Convert 64px to rem */
       font-style: normal;
       font-weight: 700;
       line-height: normal;
     }
-
-    
   }
 
   p {
     color: #000;
-    width: 1213px;
+    max-width: 76.0625rem; /* Convert 1213px to rem */
     text-align: center;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 2.25rem; /* Convert 36px to rem */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-top: 60px;
-    opacity: 0.699999988079071;
+    padding-top: 3.75rem; /* Convert 60px to rem */
+    opacity: 0.7;
   }
 `;
 
 const CardsContainer = styled.div`
-padding-top:80px;
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:space-around;
+  padding-top: 5rem; /* Convert 80px to rem */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem; /* Convert 20px to rem */
+  justify-content: space-around;
 `;
 
-const Qotation= styled.div`
-display:flex;
-flex-direction:row;
-
+const Qotation = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
-
-

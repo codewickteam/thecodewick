@@ -7,7 +7,6 @@ import Rect19 from '../../assets/Rect19.png';
 import eRight from '../../assets/Ellipse 36.png';
 import eLeft from '../../assets/Ellipse 37.png';
 
-
 const data = [
   {
     id: "p1",
@@ -61,26 +60,26 @@ const TeamMembers = () => {
 export default TeamMembers;
 
 const Container = styled.div`
-  margin: 20px 0 20px 0;
-  padding: 20px 0 20px 0;
+  margin: 1.25rem 0 1.25rem 0; /* Convert 20px to rem */
+  padding: 1.25rem 0 1.25rem 0; /* Convert 20px to rem */
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 6.25rem; /* Convert 100px to rem */
   position: relative;
 
-  .eRight{
-  position: absolute;
-  right: -100px;
-  z-index: -1;
-  pointer-events: none;
-}
+  .eRight {
+    position: absolute;
+    right: -6.25rem; /* Convert 100px to rem */
+    z-index: -1;
+    pointer-events: none;
+  }
 
-.eLeft{
-  position: absolute;
-  bottom: -500px;
-  left: -60px;
-  z-index: -1;
-  pointer-events: none;
+  .eLeft {
+    position: absolute;
+    bottom: -31.25rem; /* Convert 500px to rem */
+    left: -3.75rem; /* Convert 60px to rem */
+    z-index: -1;
+    pointer-events: none;
   }
 `;
 
@@ -93,7 +92,7 @@ const Header = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -103,7 +102,7 @@ const Header = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Poppins;
-      font-size: 64px;
+      font-size: 4rem; /* Convert 64px to rem */
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -112,22 +111,21 @@ const Header = styled.div`
 
   p {
     color: #000;
-    width: 1213px;
-    padding-top:10px;
+    max-width: 76.0625rem; /* Convert 1213px to rem */
+    padding-top: 0.625rem; /* Convert 10px to rem */
     text-align: center;
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 1.75rem; /* Convert 28px to rem */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    opacity: 0.699999988079071;
+    opacity: 0.7;
   }
 `;
 
 const CardsContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 1.25rem; /* Convert 20px to rem */
+  padding: 0.625rem; /* Convert 10px to rem */
 `;
-

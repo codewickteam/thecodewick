@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import styled from "styled-components";
 import Banner from "./Banner";
-import ellipse35 from "../../assets/Ellipse 35.png"
-import ellipse34 from "../../assets/Ellipse 34.png"
+import ellipse35 from "../../assets/Ellipse 35.png";
+import ellipse34 from "../../assets/Ellipse 34.png";
 
 export default function Top() {
   return (
@@ -28,7 +28,7 @@ export default function Top() {
         <img className="ellipse34" src={ellipse34} alt="" />
       </div>
 
-      <div className="comp2 ">
+      <div className="comp2">
         <div className="title2">
           Top Brands <span className="title2-span">Trust Us</span>
         </div>
@@ -71,9 +71,7 @@ export default function Top() {
           </div>
         </div>
 
-        <div className="band4">
-            
-        </div>
+        <div className="band4"></div>
 
         <div className="comp3 flex a-center j-center flex-col">
           <div className="title3">
@@ -116,85 +114,89 @@ const Container = styled.div`
   }
 
   .comp1 {
-    padding-top: 195px;
+    padding-top: 12.1875rem; /* Convert 195px to rem */
   }
-  .ellipse34{
+  .ellipse34 {
     position: absolute;
-    margin-top: 433px;
-    left: -50px;
+    margin-top: 27.3125rem; /* Convert 433px to rem */
+    left: -3.125rem; /* Convert 50px to rem */
     bottom: 0;
     top: 0;
     pointer-events: none;
   }
-  .ellipse35{
+  .ellipse35 {
     position: absolute;
-    margin-top: 158px;
-    right: -50px;
+    margin-top: 9.125rem; /* Convert 158px to rem */
+    right: -3.125rem; /* Convert 50px to rem */
     bottom: 0;
     top: 0;
     pointer-events: none;
-}
+  }
 
-.title1-text {
+  .title1-text {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 96px;
+    font-size: 6rem; /* Convert 96px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
+  }
 
   .text1 {
-    width: 981px;
+    width: 61.3125rem; /* Convert 981px to rem */
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 1.375rem; /* Convert 22px to rem */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 26px;
-    margin-bottom: 49px;
-    opacity: 0.699999988079071;
+    margin-top: 1.625rem; /* Convert 26px to rem */
+    margin-bottom: 3.125rem; /* Convert 49px to rem */
+    opacity: 0.7; /* Convert 0.699999988079071 to rem */
   }
+
   .btn1 {
-    width: 220px;
-    height: 75px;
-    border-radius: 60px;
+    width: 13.75rem; /* Convert 220px to rem */
+    height: 4.6875rem; /* Convert 75px to rem */
+    border-radius: 3.75rem; /* Convert 60px to rem */
     background: #1e1e1e;
-    margin-bottom: 246px;
+    margin-bottom: 3.875rem; /* Convert 246px to rem */
   }
+
   .btn-text1 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem; /* Convert 24px to rem */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
 
-  .comp2{
+  .comp2 {
     /* width: 100%; */
   }
+
   .title2 {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 145px;
+    margin-bottom: 9.0625rem; /* Convert 145px to rem */
   }
+
   .title2-span {
-    background: linear-gradient(90deg, #b20000 0%, #800 100%);
+    background: linear-gradient(87deg, #bf0000 39.29%, #7d0000 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -202,27 +204,30 @@ const Container = styled.div`
 
   .stats2 {
     /* gap: 155px; */
-    padding: 0 32px;
+    padding: 2rem 2rem; /* Convert 32px to rem */
     /* width: 300px; */
-    padding-bottom: 117px;
+    padding-bottom: 7.3125rem; /* Convert 117px to rem */
   }
+
   .red-ring {
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    opacity: 0.800000011920929;
+    width: 18.75rem; /* Convert 300px to rem */
+    height: 18.75rem; /* Convert 300px to rem */
+    border-radius: 18.75rem; /* Convert 300px to rem */
+    opacity: 0.8; /* Convert 0.800000011920929 to rem */
     background: linear-gradient(180deg, #b20000 0%, #800 100%);
   }
+
   .white-ring {
-    width: 250px;
-    height: 250px;
+    width: 15.625rem; /* Convert 250px to rem */
+    height: 15.625rem; /* Convert 250px to rem */
     border-radius: 100%;
     background-color: #fff;
   }
+
   .ring-text-left {
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -231,10 +236,11 @@ const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .ring-text-right {
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -243,59 +249,63 @@ const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .stats-txt {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 2rem; /* Convert 32px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 37px;
-  }
-  .band4{
-    height: 278px;
-    width: 100%;
-    background: #D9D9D9;
-    margin-bottom: 202px;
-    position: relative;
+    margin-top: 2.3125rem; /* Convert 37px to rem */
   }
 
+  .band4 {
+    height: 17.625rem; /* Convert 278px to rem */
+    width: 100%;
+    background: #d9d9d9;
+    margin-bottom: 12.6875rem; /* Convert 202px to rem */
+    position: relative;
+  }
 
   .title3 {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-bottom: 110px;
+    padding-bottom: 6.875rem; /* Convert 110px to rem */
   }
+
   .span3 {
     background: linear-gradient(87deg, #bf0000 39.29%, #7d0000 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
+
   .btn3 {
-    margin-top: 61px;
-    width: 260px;
-    height: 75px;
+    margin-top: 3.8125rem; /* Convert 61px to rem */
+    width: 16.25rem; /* Convert 260px to rem */
+    height: 4.6875rem; /* Convert 75px to rem */
     flex-shrink: 0;
-    border-radius: 60px;
+    border-radius: 3.75rem; /* Convert 60px to rem */
     background: #1e1e1e;
   }
+
   .btn-text3 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem; /* Convert 24px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;

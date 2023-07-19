@@ -51,31 +51,29 @@ const MasterInTechnology = () => {
     <Container>
       <Header>
         <div>
-        Master In <span>Trending Technology</span>
+          Master In <span>Trending Technology</span>
         </div>
         <p>
-        Outsource software development with Codewick leveraging an array of IT technologies for all company sizes. The right technology stack can significantly reduce the total cost of ownership & scale up your business.
+          Outsource software development with Codewick leveraging an array of IT technologies for all company sizes. The right technology stack can significantly reduce the total cost of ownership & scale up your business.
         </p>
       </Header>
       <CardsContainer>
         {data.map((item) => (
-          <img src={item.imageUrl} alt={item.id}/>
-          
+          <img src={item.imageUrl} alt={item.id} key={item.id} />
         ))}
       </CardsContainer>
     </Container>
-  )
-}
+  );
+};
 
-export default MasterInTechnology
-
+export default MasterInTechnology;
 
 const Container = styled.div`
-  margin: 20px;
-  padding: 20px;
+  margin: 1.25rem; /* Convert 20px to rem */
+  padding: 1.25rem; /* Convert 20px to rem */
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 6.25rem; /* Convert 100px to rem */
 `;
 
 const Header = styled.div`
@@ -87,7 +85,7 @@ const Header = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem; /* Convert 64px to rem */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -97,7 +95,7 @@ const Header = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Poppins;
-      font-size: 64px;
+      font-size: 4rem; /* Convert 64px to rem */
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -106,23 +104,25 @@ const Header = styled.div`
 
   p {
     color: #000;
-    width: 1213px;
-    padding-top:20px;
+    max-width: 76.0625rem; /* Convert 1213px to rem */
+    padding-top: 1.25rem; /* Convert 20px to rem */
     text-align: center;
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 1.75rem; /* Convert 28px to rem */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    opacity: 0.699999988079071;
+    opacity: 0.7;
   }
 `;
 
 const CardsContainer = styled.div`
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-justify-items: center;
-gap: 100px;
-margin-bottom:50px;
-margin-top:100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 6.25rem; /* Convert 100px to rem */
+  margin-bottom: 3.125rem; /* Convert 50px to rem */
+  margin-top: 6.25rem; /* Convert 100px to rem */
 `;
+
+// Rest of the code remains the same.
