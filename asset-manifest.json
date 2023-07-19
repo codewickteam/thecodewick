@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/thecodewick.github.io/static/css/main.9a8809c2.css",
-    "main.js": "/thecodewick.github.io/static/js/main.34261785.js",
-    "static/media/img_1.png": "/thecodewick.github.io/static/media/img_1.467104ca865862448a0e.png",
-    "static/media/Rectangle30.png": "/thecodewick.github.io/static/media/Rectangle30.dc3a797c4ccbb048465b.png",
-    "static/media/img_3.png": "/thecodewick.github.io/static/media/img_3.13ba98031f6b12fb6e2d.png",
-    "static/media/img_2.png": "/thecodewick.github.io/static/media/img_2.975db05a6200d89e2413.png",
-    "static/media/Rect17.png": "/thecodewick.github.io/static/media/Rect17.0b54c172d2452f9cd9f8.png",
-    "static/media/Rect18.png": "/thecodewick.github.io/static/media/Rect18.07058bc881f7e8dcde01.png",
-    "static/media/Rect19.png": "/thecodewick.github.io/static/media/Rect19.782a3dda890bbc1d4878.png",
-    "static/media/image8.png": "/thecodewick.github.io/static/media/image8.1308f63a80eca0fe9777.png",
-    "static/media/codewick-logo.png": "/thecodewick.github.io/static/media/codewick-logo.f59c314b1a61aefeaa89.png",
-    "static/media/image 3.png": "/thecodewick.github.io/static/media/image 3.688b0b56d9299c254908.png",
-    "index.html": "/thecodewick.github.io/index.html",
-    "main.9a8809c2.css.map": "/thecodewick.github.io/static/css/main.9a8809c2.css.map",
-    "main.34261785.js.map": "/thecodewick.github.io/static/js/main.34261785.js.map"
+    "main.css": "/static/css/main.9a8809c2.css",
+    "main.js": "/static/js/main.c907d52d.js",
+    "static/media/img_1.png": "/static/media/img_1.467104ca865862448a0e.png",
+    "static/media/Rectangle30.png": "/static/media/Rectangle30.dc3a797c4ccbb048465b.png",
+    "static/media/img_3.png": "/static/media/img_3.13ba98031f6b12fb6e2d.png",
+    "static/media/img_2.png": "/static/media/img_2.975db05a6200d89e2413.png",
+    "static/media/Rect17.png": "/static/media/Rect17.0b54c172d2452f9cd9f8.png",
+    "static/media/Rect18.png": "/static/media/Rect18.07058bc881f7e8dcde01.png",
+    "static/media/Rect19.png": "/static/media/Rect19.782a3dda890bbc1d4878.png",
+    "static/media/image8.png": "/static/media/image8.1308f63a80eca0fe9777.png",
+    "static/media/codewick-logo.png": "/static/media/codewick-logo.f59c314b1a61aefeaa89.png",
+    "static/media/image 3.png": "/static/media/image 3.688b0b56d9299c254908.png",
+    "index.html": "/index.html",
+    "main.9a8809c2.css.map": "/static/css/main.9a8809c2.css.map",
+    "main.c907d52d.js.map": "/static/js/main.c907d52d.js.map"
   },
   "entrypoints": [
     "static/css/main.9a8809c2.css",
-    "static/js/main.34261785.js"
+    "static/js/main.c907d52d.js"
   ]
 }
