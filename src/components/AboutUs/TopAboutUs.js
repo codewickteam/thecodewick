@@ -13,17 +13,17 @@ const TopAboutUs = () => {
       <div>
         <img src={Rectangle30} alt="Rectangle30" />
         <span>
-          <p className="p1">
+          <Paragraph>
             Outsource software development with Codewick leveraging an array of
             IT technologies for all company sizes. The right technology stack
             can significantly reduce the total cost of ownership & scale up your
             business.
-          </p>
-          <p className="p2">
+          </Paragraph>
+          <Paragraph>
             Our team of tech strategists, enterprise architects & transformation
             experts help harness technology & innovation as a way to reinvent
             every business.
-          </p>
+          </Paragraph>
           <button>Get in touch</button>
         </span>
       </div>
@@ -63,21 +63,17 @@ const Container = styled.div`
     display: flex;
     margin-top: 100px;
     img {
-      width: 600px;
+      // width: 600px;
       height: 400px;
       flex-shrink: 0;
       border-radius: 20px;
-      padding: 0 20px 0 50px;
+      padding: 0 20px 0 69px;
     }
-    .p1 p2 {
-      color: #000;
-      width: 700px;
-      font-family: Poppins;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      opacity: 0.699999988079071;
+    span{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      margin-left: 50px;
     }
     button {
       width: 241px;
@@ -93,4 +89,14 @@ const Container = styled.div`
       line-height: normal;
     }
   }
+`;
+
+const Paragraph = styled.div`
+color: #000;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+opacity: 0.699999988079071;
 `;
