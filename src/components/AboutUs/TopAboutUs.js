@@ -10,7 +10,7 @@ const TopAboutUs = () => {
         As a Web Development Service are commited to building custom website
         solutions that drive business towards success.
       </p>
-      <div>
+      <Left>
         <img src={Rectangle30} alt="Rectangle30" />
         <span>
           <Paragraph>
@@ -26,7 +26,7 @@ const TopAboutUs = () => {
           </Paragraph>
           <button>Get in touch</button>
         </span>
-      </div>
+      </Left>
     </Container>
   );
 };
@@ -59,8 +59,10 @@ const Container = styled.div`
     line-height: normal;
     opacity: 0.699999988079071;
   }
-  div {
-    display: flex;
+`;
+
+const Left = styled.div`
+display: flex;
     margin-top: 100px;
     img {
       // width: 600px;
@@ -73,7 +75,7 @@ const Container = styled.div`
       display:flex;
       flex-direction:column;
       justify-content:space-between;
-      margin-left: 50px;
+      margin: 0 80px 0 50px;
     }
     button {
       width: 241px;
@@ -88,9 +90,7 @@ const Container = styled.div`
       font-weight: 600;
       line-height: normal;
     }
-  }
 `;
-
 const Paragraph = styled.div`
 color: #000;
 font-family: Poppins;
@@ -99,4 +99,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 opacity: 0.699999988079071;
+max-width: 1000px;
+min-width:400px;
 `;
+
