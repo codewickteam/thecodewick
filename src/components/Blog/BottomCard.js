@@ -61,6 +61,10 @@ const Container=styled.div`
     .card{
         border: none
     }
+
+    img{
+        margin-bottom: 25px;
+    }
    
     .author{
         color: #000;
@@ -96,12 +100,13 @@ const Container=styled.div`
     }
 
     .buttons{
-        gap: 18px;
+        margin-left: 18px;
     }
-
+    
     .btn{
         border-radius: 20px;
-border: 1px solid #000;
+        border: 1px solid #000;
+        margin-left: 18px;
     }
 
     .btn-text{

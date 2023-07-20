@@ -37,7 +37,7 @@ const Container = styled.div`
   display: flex;
 
 .container{
-  max-width: 1728px;
+  max-width: 1440px;
 }
   .flex{
     display: flex;
@@ -76,8 +76,8 @@ const Container = styled.div`
   }
 
   .links{
-    /* gap: 110px; */
-    width: 860px;
+    gap: 80px;
+    /* width: 860px; */
     margin: 0 30px;
   }
 

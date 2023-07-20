@@ -9,12 +9,10 @@ export default function Bottom() {
             <div className="header">
                 All Blog Posts
             </div>
-            <div className='cards flex'>
+            <div className='cards'>
                 <BottomCard/>
                 <BottomCard/>
                 <BottomCard/>
-            </div>
-            <div className='cards flex'>
                 <BottomCard/>
                 <BottomCard/>
                 <BottomCard/>
@@ -50,8 +48,11 @@ margin: 205px 0 362px 0;
     }
 
     .cards{
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 75px;
+        /* justify-content: space-between; */
+        /* gap: 75px; */
     }
 
 `
