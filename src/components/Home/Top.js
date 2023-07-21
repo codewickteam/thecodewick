@@ -37,7 +37,7 @@ export default function Top() {
           <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
-                <div className="ring-text-left">1800+</div>
+                <div className="ring-text-left">100+</div>
               </div>
             </div>
             <div className="stats-txt">Projects Launched</div>
@@ -46,20 +46,20 @@ export default function Top() {
           <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
-                <div className="ring-text-left">14+</div>
+                <div className="ring-text-left">20+</div>
               </div>
             </div>
             <div className="stats-txt">Years of Experience</div>
           </div>
 
-          <div className="flex flex-col a-center">
+          {/* <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
                 <div className="ring-text-right">575+</div>
               </div>
             </div>
             <div className="stats-txt">Dedicated Developers</div>
-          </div>
+          </div> */}
 
           <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
