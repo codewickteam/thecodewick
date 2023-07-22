@@ -54,12 +54,11 @@ function Footer() {
 
 export default Footer;
 
-
 const Container = styled.div`
   padding: 0;
   margin: 0;
-  padding-top: 3.375rem; /* Convert 54px to rem */
-  height: 32.5rem; /* Convert 520px to rem */
+  padding-top: 54px; 
+  height: 519px; 
   font-family: 'Poppins', sans-serif;
   background-color: black;
   color: white;
@@ -67,6 +66,23 @@ const Container = styled.div`
   flex-shrink: 0;
   justify-content: space-around;
   position: relative;
+
+  @media (max-width: 1025px){
+    padding-top: 54px; 
+    height: 365px; 
+  }
+  @media (max-width: 770px){
+    padding-top: 54px; 
+    height: 290px; 
+  }
+  @media (max-width: 430px){
+    padding-top: 24px; 
+    height: 180px; 
+  }
+  @media (max-width: 390px){
+    padding-top: 10px; 
+    height: 139px; 
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -75,15 +91,39 @@ const LogoContainer = styled.div`
   align-items: flex-start;
 
   p {
-    width: 27.75rem; /* Convert 444px to rem */
-    font-size: 1rem; /* Already in rem, so no conversion needed */
+    width: 444px; 
+    font-size: 16px;
     line-height: normal;
     text-align: left;
-    padding: 0.625rem 0; /* Convert 10px to rem */
+    padding: 10px 0; 
     color: #FFF;
-    font-size: 1.25rem; /* Convert 20px to rem */
+    font-size: 20px; 
     font-style: normal;
     line-height: normal;
+  }
+  @media (max-width: 1025px){
+    p {
+    width: 350px; 
+    font-size: 15px; 
+  }
+  }
+  @media (max-width: 770px){
+    p {
+    width: 300px; 
+    font-size: 13px; 
+  }
+  }
+  @media (max-width: 430px){
+    p {
+    width: 150px; 
+    font-size: 8px; 
+  }
+  }
+  @media (max-width: 390px){
+    p {
+    width: 130px; 
+    font-size: 6px; 
+  }
   }
 `;
 
@@ -92,30 +132,55 @@ const LogoWrapper = styled.div`
   align-items: center;
 
   img {
-    width: 13.75rem; /* Convert 220px to rem */
-    height: 2.625rem; /* Convert 42px to rem */
+    width: 220px; 
+    height: 42px; 
     flex-shrink: 0;
+  }
+
+  @media (max-width: 1025px){
+    img {
+    width: 198px; 
+    height: 32px; 
+  } 
+  }
+  @media (max-width: 770px){
+    img {
+    width: 168px; 
+    height: 28px; 
+  } 
+  }
+  @media (max-width: 430px){
+    img {
+    width: 100px; 
+    height: 18px; 
+  } 
+  }
+  @media (max-width: 390px){
+    img {
+    width: 90px; 
+    height: 15px; 
+  } 
   }
 `;
 
 const EmailInput = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.625rem; /* Convert 10px to rem */
-  margin-top: 0.625rem; /* Convert 10px to rem */
+  gap: 10px; 
+  margin-top: 10px; 
   position: relative;
   font-family: 'Poppins', sans-serif;
 
   input {
-    width: 25.25rem; /* Convert 404px to rem */
-    height: 3.625rem; /* Convert 58px to rem */
+    width: 404px; 
+    height: 58px; 
     flex-shrink: 0;
     background: white;
-    border-radius: 1.875rem; /* Convert 30px to rem */
+    border-radius: 30px; 
     border: none;
     outline: none;
-    padding-left: 1.875rem; /* Convert 30px to rem */
-    font-size: 1.25rem; /* Convert 20px to rem */
+    padding-left: 30px; 
+    font-size: 20px; 
     font-family: 'Poppins', sans-serif;
     transition: border-color 0.3s ease;
 
@@ -123,46 +188,191 @@ const EmailInput = styled.div`
       border-color: none;
     }
   }
+
+  @media (max-width: 1025px){
+  gap: 8px; 
+  margin-top: 1px; 
+
+  input {
+    width: 360px; 
+    height: 38px; 
+    padding-left: 20px; 
+    font-size: 15px; 
+
+  }
+}
+  @media (max-width: 770px){
+  gap: 8px; 
+  margin-top: 0.8; 
+
+  input {
+    width: 300px; 
+    height: 38px; 
+    padding-left: 20px; 
+    font-size: 13px; 
+  }
+
+  }
+  @media (max-width: 430px){
+  gap: 8px; 
+  margin-top: 0.1px; 
+
+  input {
+    width: 150px; 
+    height: 28px; 
+    padding-left: 10px; 
+    font-size: 8px; 
+  }
+
+  }
+  @media (max-width: 390px){
+  gap: 5px; 
+  margin-top: 0.1px; 
+
+  input {
+    width: 130px; 
+    height: 18px; 
+    padding-left: 10px; 
+    font-size: 6px; 
+  }
+
+  }
 `;
 
 const Button = styled.button`
   position: absolute;
-  left: 21.875rem; /* Convert 350px to rem */
+  left: 350px; 
   border-radius: 100%;
-  width: 3.125rem; /* Convert 50px to rem */
-  height: 3.125rem; /* Convert 50px to rem */
+  width: 50px; 
+  height: 50px; 
   background-color: black;
   cursor: pointer;
 
   svg {
     fill: white;
   }
+
+  @media (max-width: 1025px){
+  left: 320px; 
+  width: 35px; 
+  height: 35px; 
+  
+  svg {
+   padding-right: 10px;
+   padding-bottom: 10px;
+  }
+}
+  @media (max-width: 770px){
+  left: 260px; 
+  width: 32px; 
+  height: 32px; 
+  
+  svg {
+   padding-right: 12px;
+   padding-bottom: 10px;
+  }
+}
+  @media (max-width: 430px){
+  left: 122px; 
+  width: 25px; 
+  height: 25px; 
+  
+  svg {
+   padding-right: 20px;
+   padding-bottom: 20px;
+  }
+}
+@media (max-width: 390px){
+  left: 112px; 
+  width: 16px; 
+  height: 16px; 
+  
+  svg {
+   padding-right: 30px;
+   padding-bottom: 30px;
+  }
+}
 `;
 
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 0.625rem; /* Convert 10px to rem */
+  margin-top: 10px; 
   align-items: flex-start;
-  gap: 0.3125rem; /* Convert 5px to rem */
+  gap: 5px;
   font-family: 'Poppins', sans-serif;
 
   p {
     color: #FFF;
     font-family: Poppins;
-    font-size: 1.75rem; /* Convert 28px to rem */
+    font-size: 28px; 
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 1.25rem; /* Convert 20px to rem */
+    margin-bottom: 20px;
   }
 
   a {
     color: #FFF;
-    font-size: 1.25rem; /* Convert 20px to rem */
+    font-size: 20px; 
     font-style: normal;
     line-height: normal;
     text-decoration: none;
     opacity: 0.7;
   }
-}`;
+
+  @media (max-width: 1025px){
+  margin-top: 8px; 
+  gap: 5px;
+
+  p {
+    font-size: 20px; 
+    margin-bottom: 1px;
+  }
+
+  a {
+    font-size: 15px; 
+  }
+  }
+
+  @media (max-width: 770px){
+  margin-top: 8px; 
+  gap: 5px;
+
+  p {
+    font-size: 17px; 
+    margin-bottom: 1px;
+  }
+
+  a {
+    font-size: 13px; 
+  }
+  }
+  @media (max-width: 430px){
+  margin-top: 6px; 
+  gap: 2px;
+
+  p {
+    font-size: 10px; 
+    margin-bottom: 1px;
+  }
+
+  a {
+    font-size: 8px; 
+  }
+  }
+  @media (max-width: 390px){
+  margin-top: 5px; 
+  gap: 1px;
+
+  p {
+    font-size: 8px; 
+    margin-bottom: 1px;
+  }
+
+  a {
+    font-size: 6px; 
+  }
+  }
+
+`;
