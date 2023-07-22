@@ -24,8 +24,8 @@ export default function Top() {
           <div className="btn-text1">See Plans</div>
         </Link>
 
-        <img className="ellipse35" src={ellipse35} alt="" />
-        <img className="ellipse34" src={ellipse34} alt="" />
+        {/* <img className="ellipse35" src={ellipse35} alt="" />
+        <img className="ellipse34" src={ellipse34} alt="" /> */}
       </div>
 
       <div className="comp2">
