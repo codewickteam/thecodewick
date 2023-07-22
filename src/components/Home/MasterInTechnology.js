@@ -69,11 +69,23 @@ const MasterInTechnology = () => {
 export default MasterInTechnology;
 
 const Container = styled.div`
-  margin: 1.25rem; /* Convert 20px to rem */
-  padding: 1.25rem; /* Convert 20px to rem */
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 6.25rem; /* Convert 100px to rem */
+  margin-top: 100px;
+  @media (max-width: 1025px){
+    max-height: 800px;
+  }
+  @media (max-width: 770px){
+    max-height: 700px;
+  }
+  @media (max-width: 430px){
+    max-height: 500px;
+  }
+  @media (max-width: 390px){
+    max-height: 400px;
+  }
 `;
 
 const Header = styled.div`
@@ -85,17 +97,18 @@ const Header = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
     span {
       background: linear-gradient(90deg, #de0000 0%, #6a0000 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Poppins;
-      font-size: 4rem; /* Convert 64px to rem */
+      font-size: 64px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -104,15 +117,71 @@ const Header = styled.div`
 
   p {
     color: #000;
-    max-width: 76.0625rem; /* Convert 1213px to rem */
-    padding-top: 1.25rem; /* Convert 20px to rem */
+    max-width: 1213px;
+    padding-top: 20px;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.75rem; /* Convert 28px to rem */
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     opacity: 0.7;
+  }
+  @media (max-width: 1025px){
+    div {
+    font-size: 40px;
+    span {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    max-width: 816px;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+  }
+  @media (max-width: 770px){
+    div {
+    font-size: 35px;
+    span {
+      font-size: 35px;
+    }
+  }
+
+  p {
+    max-width: 600px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  }
+  @media (max-width: 430px){
+    div {
+    font-size: 24px;
+    span {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    max-width: 300px;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  }
+  @media (max-width: 390px){
+    div {
+    font-size: 24px;
+    span {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    max-width: 280px;
+    padding-top: 10px;
+    font-size: 12px;
+  }
   }
 `;
 
@@ -120,9 +189,50 @@ const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  gap: 6.25rem; /* Convert 100px to rem */
-  margin-bottom: 3.125rem; /* Convert 50px to rem */
-  margin-top: 6.25rem; /* Convert 100px to rem */
+  gap: 100px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+
+  @media (max-width: 1025px){
+  gap: 80px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+
+  img{
+    width: 102px;
+    height: 102px;
+  }
+  }
+  @media (max-width: 770px){
+    gap: 60px;
+  margin-bottom: 50px;
+  margin-top: 90px;
+
+  img{
+    width: 90px;
+    height: 90px;
+  }
+  }
+  @media (max-width: 430px){
+  gap: 40px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+
+  img{
+    width: 45px;
+    height: 45px;
+  }
+  }
+  
+  @media (max-width: 390px){
+  gap: 30px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+
+  img{
+    width: 37px;
+    height: 37px;
+  }
+  }
 `;
 
-// Rest of the code remains the same.
