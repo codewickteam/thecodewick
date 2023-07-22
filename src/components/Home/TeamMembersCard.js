@@ -16,7 +16,6 @@ export default TeamMembersCard;
 const Container = styled.div`
   margin: 0;
   width: 440px;
-  height: 706px;
   border: grey;
   background: #fff;
   flex-shrink: 0;
