@@ -69,8 +69,10 @@ const Container = styled.div`
 
   .eRight {
     position: absolute;
-    right:-10px; 
+    right:-50px; 
+    top:80px;
     z-index: -1;
+    width:230px;
     pointer-events: none;
   }
 

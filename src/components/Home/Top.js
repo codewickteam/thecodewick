@@ -24,8 +24,8 @@ export default function Top() {
           <div className="btn-text1">See Plans</div>
         </Link>
 
-        {/* <img className="ellipse35" src={ellipse35} alt="" />
-        <img className="ellipse34" src={ellipse34} alt="" /> */}
+        <img className="ellipse35" src={ellipse35} alt="" />
+        <img className="ellipse34" src={ellipse34} alt="" />
       </div>
 
       <div className="comp2">
@@ -33,7 +33,7 @@ export default function Top() {
           Top Brands <span className="title2-span">Trust Us</span>
         </div>
 
-        <div className="stats2 flex j-between">
+        <div className="stats2">
           <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
@@ -90,9 +90,6 @@ export default function Top() {
 }
 
 const Container = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   .flex {
     display: flex;
   }
@@ -114,80 +111,83 @@ const Container = styled.div`
   }
 
   .comp1 {
-    padding-top: 12.1875rem; /* Convert 195px to rem */
+    padding-top: 195px;
   }
   .ellipse34 {
     position: absolute;
-    margin-top: 27.3125rem; /* Convert 433px to rem */
-    left: -3.125rem; /* Convert 50px to rem */
-    bottom: 0;
-    top: 0;
+    left: -50px;
+    top: 550px;
+    width: 230px;
+    z-index: -1;
     pointer-events: none;
   }
   .ellipse35 {
     position: absolute;
-    margin-top: 9.125rem; /* Convert 158px to rem */
-    right: -3.125rem; /* Convert 50px to rem */
-    bottom: 0;
-    top: 0;
+    right: -10px;
+    top: 160px;
+    z-index: -9;
+    width: 230px;
     pointer-events: none;
+  }
+  .title1 {
+    max-width: 981px;
+    background-color: white;
   }
 
   .title1-text {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 6rem; /* Convert 96px to rem */
+    font-size: 96px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
   .text1 {
-    width: 61.3125rem; /* Convert 981px to rem */
+    display: flex;
+    max-width: 981px;
     color: #000;
+    background-color: white;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.375rem; /* Convert 22px to rem */
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 1.625rem; /* Convert 26px to rem */
-    margin-bottom: 3.125rem; /* Convert 49px to rem */
-    opacity: 0.7; /* Convert 0.699999988079071 to rem */
+    margin-top: 26px;
+    margin-bottom: 49px;
+    opacity: 0.7;
   }
 
   .btn1 {
-    width: 13.75rem; /* Convert 220px to rem */
-    height: 4.6875rem; /* Convert 75px to rem */
-    border-radius: 3.75rem; /* Convert 60px to rem */
-    background: #1e1e1e;
-    margin-bottom: 3.875rem; /* Convert 246px to rem */
+    width: 220px;
+    height: 75px;
+    border-radius: 60px;
+    background: linear-gradient(270deg, #800 0%, #0e1118 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 246px;
   }
 
   .btn-text1 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.5rem; /* Convert 24px to rem */
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-  }
-
-  .comp2 {
-    /* width: 100%; */
   }
 
   .title2 {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 9.0625rem; /* Convert 145px to rem */
+    margin-bottom: 145px;
   }
 
   .title2-span {
@@ -196,7 +196,7 @@ const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -204,22 +204,26 @@ const Container = styled.div`
 
   .stats2 {
     /* gap: 155px; */
-    padding: 2rem 2rem; /* Convert 32px to rem */
+    padding: 32px 32px;
     /* width: 300px; */
-    padding-bottom: 7.3125rem; /* Convert 117px to rem */
+    padding-bottom: 117px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .red-ring {
-    width: 18.75rem; /* Convert 300px to rem */
-    height: 18.75rem; /* Convert 300px to rem */
-    border-radius: 18.75rem; /* Convert 300px to rem */
-    opacity: 0.8; /* Convert 0.800000011920929 to rem */
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    opacity: 0.8;
     background: linear-gradient(180deg, #b20000 0%, #800 100%);
   }
 
   .white-ring {
-    width: 15.625rem; /* Convert 250px to rem */
-    height: 15.625rem; /* Convert 250px to rem */
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
     background-color: #fff;
   }
@@ -227,7 +231,7 @@ const Container = styled.div`
   .ring-text-left {
     text-align: center;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -240,7 +244,7 @@ const Container = styled.div`
   .ring-text-right {
     text-align: center;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -254,18 +258,18 @@ const Container = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 2rem; /* Convert 32px to rem */
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 2.3125rem; /* Convert 37px to rem */
+    margin-top: 37px;
   }
 
   .band4 {
-    height: 17.625rem; /* Convert 278px to rem */
+    height: 278px;
     width: 100%;
     background: #d9d9d9;
-    margin-bottom: 12.6875rem; /* Convert 202px to rem */
+    margin-bottom: 202px;
     position: relative;
   }
 
@@ -273,11 +277,11 @@ const Container = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-bottom: 6.875rem; /* Convert 110px to rem */
+    padding-bottom: 110px;
   }
 
   .span3 {
@@ -286,18 +290,18 @@ const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
   .btn3 {
-    margin-top: 3.8125rem; /* Convert 61px to rem */
-    width: 16.25rem; /* Convert 260px to rem */
-    height: 4.6875rem; /* Convert 75px to rem */
+    margin-top: 61px;
+    width: 260px;
+    height: 75px;
     flex-shrink: 0;
-    border-radius: 3.75rem; /* Convert 60px to rem */
+    border-radius: 60px;
     background: #1e1e1e;
   }
 
@@ -305,9 +309,319 @@ const Container = styled.div`
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.5rem; /* Convert 24px to rem */
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+
+  /* ----------------------------------------------------------------------media ------------------------------------------------------------------------ */
+
+  @media (max-width: 1025px) {
+    .comp1 {
+      padding-top: 195px;
+    }
+    .ellipse34 {
+      left: -50px;
+      top: 550px;
+      width: 190px;
+    }
+    .ellipse35 {
+      right: -90px;
+      top: 260px;
+      width: 190px;
+    }
+    .title1 {
+      max-width: 920px;
+    }
+
+    .title1-text {
+      font-size: 86px;
+    }
+
+    .text1 {
+      max-width: 735px;
+      font-size: 18px;
+      margin-top: 26px;
+      margin-bottom: 80px;
+    }
+
+    .btn1 {
+      width: 210px;
+      height: 70px;
+    }
+
+    .btn-text1 {
+      font-size: 22px;
+    }
+
+    .title2 {
+      font-size: 40px;
+      margin-bottom: 145px;
+    }
+
+    .title2-span {
+      font-size: 40px;
+    }
+
+    .stats2 {
+      padding: 32px 32px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .red-ring {
+      width: 130px;
+      height: 130px;
+    }
+
+    .white-ring {
+      width: 105px;
+      height: 105px;
+    }
+
+    .ring-text-left {
+      font-size: 35px;
+    }
+
+    .ring-text-right {
+      font-size: 45px;
+    }
+
+    .stats-txt {
+      font-size: 20px;
+      margin-top: 37px;
+    }
+
+    .band4 {
+      height: 140px;
+      width: 100%;
+      margin-bottom: 102px;
+    }
+
+    .title3 {
+      font-size: 40px;
+      padding-bottom: 90px;
+    }
+
+    .span3 {
+      font-size: 40px;
+    }
+
+    .btn3 {
+      margin-top: 61px;
+      width: 250px;
+      height: 70px;
+    }
+
+    .btn-text3 {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 770px) {
+    .comp1 {
+      padding-top: 195px;
+    }
+    .ellipse34 {
+      left: -50px;
+      top: 500px;
+      width: 120px;
+    }
+    .ellipse35 {
+      right: -90px;
+      top: 220px;
+      width: 140px;
+    }
+    .title1 {
+      max-width: 700px;
+    }
+
+    .title1-text {
+      font-size: 60px;
+    }
+
+    .text1 {
+      max-width: 700px;
+      font-size: 18px;
+      margin-top: 26px;
+      margin-bottom: 60px;
+    }
+
+    .btn1 {
+      width: 210px;
+      height: 70px;
+    }
+
+    .btn-text1 {
+      font-size: 22px;
+    }
+
+    .title2 {
+      font-size: 40px;
+      margin-bottom: 145px;
+    }
+
+    .title2-span {
+      font-size: 40px;
+    }
+
+    .stats2 {
+      padding: 32px 32px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .red-ring {
+      width: 130px;
+      height: 130px;
+    }
+
+    .white-ring {
+      width: 105px;
+      height: 105px;
+    }
+
+    .ring-text-left {
+      font-size: 35px;
+    }
+
+    .ring-text-right {
+      font-size: 45px;
+    }
+
+    .stats-txt {
+      font-size: 20px;
+      margin-top: 37px;
+    }
+
+    .band4 {
+      height: 140px;
+      margin-bottom: 102px;
+    }
+
+    .title3 {
+      font-size: 40px;
+      padding-bottom: 90px;
+    }
+
+    .span3 {
+      font-size: 40px;
+    }
+
+    .btn3 {
+      margin-top: 61px;
+      width: 250px;
+      height: 70px;
+    }
+
+    .btn-text3 {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 430px) {
+    .comp1 {
+      padding-top: 195px;
+    }
+    .ellipse34 {
+      left: -50px;
+      top: 400px;
+      width: 80px;
+    }
+    .ellipse35 {
+      right: -50px;
+      top: 180px;
+      width: 80px;
+    }
+    .title1 {
+      max-width: 264px;
+    }
+
+    .title1-text {
+      font-size: 28px;
+    }
+
+    .text1 {
+      max-width: 335px;
+      font-size: 12px;
+      margin-top: 26px;
+      margin-bottom: 40px;
+    }
+
+    .btn1 {
+      width: 126px;
+      height: 43px;
+    }
+
+    .btn-text1 {
+      font-size: 14px;
+    }
+
+    .comp2{
+      margin-top: -90px;
+    }
+    .title2 {
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+
+    .title2-span {
+      font-size: 24px;
+    }
+
+    .stats2 {
+      padding: 32px 32px;
+      display: flex;
+    }
+
+    .red-ring {
+      width: 70px;
+      height: 70px;
+    }
+
+    .white-ring {
+      width: 50px;
+      height: 50px;
+    }
+
+    .ring-text-left {
+      font-size: 15px;
+    }
+
+    .ring-text-right {
+      font-size: 15px;
+    }
+
+    .stats-txt {
+      font-size: 9px;
+      margin-top: 27px;
+    }
+
+    .band4 {
+      height: 79px;
+      margin-bottom: 102px;
+    }
+
+    .title3 {
+      font-size: 24px;
+      padding-bottom: 90px;
+    }
+
+    .span3 {
+      font-size: 24px;
+    }
+
+    .btn3 {
+      margin-top: 25px;
+      width: 130px;
+      height: 38px;
+    }
+
+    .btn-text3 {
+      font-size: 14px;
+    }
   }
 `;

@@ -28,11 +28,37 @@ export default Banner;
 
 const Container = styled.div`
   img {
-    width: 45.4375rem; /* Convert 727px to rem */
-    height: 45.4375rem; /* Convert 727px to rem */
+    width: 727px;
+    height: 727px;
     margin: 0 auto;
     display: block;
     object-fit: cover;
-    box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5); /* Convert 2px to rem */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 1025px){
+    img {
+    width: 500px;
+    height: 500px;
+  }
+  }
+  @media (max-width: 770px){
+    img {
+    width: 450px;
+    height: 450px;
+  }
+  }
+
+  @media (max-width: 430px){
+    img {
+    width: 350px;
+    height: 350px;
+  }
+  }
+  @media (max-width: 390px){
+    img {
+    width: 250px;
+    height: 250px;
+  }
   }
 `;
+
