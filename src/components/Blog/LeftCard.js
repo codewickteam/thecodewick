@@ -99,7 +99,7 @@ const LCard=styled.div`
 
     .btn{
         border-radius: 20px;
-border: 1px solid #000;
+        border: 1px solid #000;
     }
 
     .btn-text{
@@ -110,4 +110,35 @@ border: 1px solid #000;
         font-weight: 500;
         line-height: normal;
     }
+
+  @media (max-width: 430px){
+    margin-top: 20px;
+    align-items:center;
+   .img{
+    margin-bottom: 10px;
+    img{
+        width:20rem;
+        max-height:15rem;
+
+    }
+   }
+    .author{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .title{
+        font-size: 15px;
+        margin-bottom: 13px;
+        width:20rem;
+
+    }
+
+    .content{
+        font-size: 13px;
+        max-width:300px;
+        margin-bottom: 25px;
+
+    }
+  }
 `

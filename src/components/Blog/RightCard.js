@@ -61,15 +61,16 @@ const RCard=styled.div`
 
     img{
         width: 336px;
-height: 200px;
-margin-right: 26px;
-margin-bottom: 35px;
+        height: 200px;
+        margin-right: 26px;
+        margin-bottom: 35px;
     }
 
     .card{
         border: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .author{
         color: #000;
@@ -116,5 +117,37 @@ margin-bottom: 35px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+    }
+    @media (max-width: 430px) {
+        margin-bottom: 20px;
+     .card{
+        justify-content:center;
+        max-width:300px;
+     }   
+        img{
+        max-width: 250px;
+        max-height: 170px;
+        margin-right: 26px;
+        margin-bottom: 15px;
+        margin-left: -20px;
+    }
+
+    .author{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        font-size: 12px;
+        max-width:300px;
+        margin-bottom: 13px;
+    }
+
+    .content{
+        font-size: 10px;
+        margin-bottom: 16px;
+        max-width:300px;
+    }
+
     }
 `

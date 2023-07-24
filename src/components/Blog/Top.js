@@ -49,7 +49,7 @@ margin: 224px 0 240px 0;
         color: #000;
         text-align: center;
         font-family: Poppins;
-        font-size: 96px;
+        font-size: 6rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -65,6 +65,8 @@ margin: 224px 0 240px 0;
         line-height: normal;
         opacity: 0.699999988079071;
         margin-bottom: 94px;
+        max-width:950px;
+        text-align:center;
     }
     .mail{
         border: 10px;
@@ -109,11 +111,40 @@ margin: 224px 0 240px 0;
         /* position: absolute;
         z-index: -1; */
         color: #FFF;
-text-align: center;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    `
+    
+  @media (max-width: 430px){
+    .header{
+        font-size: 3rem;
+        margin-bottom: 35px;
+    }
+    .text{
+        font-size: 16px;
+        max-width:950px;
+    }
+    .mail{
+        padding: 3px;
+        width: 300px;
+        height: 45px;
+
+
+    }
+    .email{
+        font-size: 16px;
+        max-width: 180px;
+        max-height: 70px;
+        margin-left: 14px;
+    }
+    .button{
+        max-width: 95px;
+        max-height: 40px;
+        font-size: 16px;
+    }
+  }
+ `
