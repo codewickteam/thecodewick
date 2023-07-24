@@ -114,6 +114,7 @@ const Header = styled.div`
   }
   }
   @media (max-width: 430px){
+    margin-top: 0rem;
     div {
     font-size: 1.5rem; 
   }
