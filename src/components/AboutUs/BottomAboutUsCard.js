@@ -22,7 +22,7 @@ const Container = styled.div`
     width: 126px;
     height: 126px;
     flex-shrink: 0;
-    border-radius: 1.25rem; /* Convert 20px to rem */
+    border-radius: 1.25rem; 
     margin:0 20px 0 20px ;
   }
   span {
@@ -45,4 +45,52 @@ const Container = styled.div`
     max-width: 481px;
     }
   }
-}`;
+  @media (max-width: 1025px){
+    img {
+    width: 120px;
+    height: 120px;
+    margin:0 20px 0 20px ;
+  }
+  span {
+    h2 {
+      font-size: 26px;
+    }
+    p{
+    font-size: 16px;
+    max-width: 481px;
+    }
+  }
+}
+  @media (max-width: 430px){
+    img {
+    width: 70px;
+    height: 70px;
+    margin:0 20px 0 10px ;
+  }
+  span {
+    h2 {
+      font-size: 16px;
+    }
+    p{
+    font-size: 9px;
+    max-width: 300px;
+    }
+  }
+  }
+  @media (max-width: 390px){
+    img {
+    width: 60px;
+    height: 60px;
+    margin:0 10px 0 10px ;
+  }
+  span {
+    h2 {
+      font-size: 16px;
+    }
+    p{
+    font-size: 9px;
+    max-width: 200px;
+    }
+  }
+  }
+`;

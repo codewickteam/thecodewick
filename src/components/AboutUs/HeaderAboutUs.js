@@ -42,17 +42,6 @@ const Container = styled.div`
     font-weight: 600;
     line-height: normal;
     opacity: 0.699999988079071;
-    @media (max-width: 831px){};
-    @media (max-width: 335px){
-      color: #000;
-      text-align: center;
-      font-family: Poppins;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      opacity: 0.699999988079071;    
-    };
     } 
   button {
     width: 220px;
@@ -69,10 +58,29 @@ const Container = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    @media (max-width: 126px){
-      height: 43px;
-      flex-shrink: 0;
-    };
   }
 
+
+  @media (max-width: 1025px){
+    margin-top: 100px;
+  h1 {
+    font-size: 96px;
+  }
+  p {
+    width: 981px;
+    font-size: 22px;
+    } 
+  button {
+    width: 220px;
+    height: 75px;
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  }
+  @media (max-width: 770px){
+  }
+  @media (max-width: 430px){
+  }
+  @media (max-width: 390px){
+  }
 `;
