@@ -10,8 +10,7 @@ const MiddleAboutCard = ({ imageUrl, name, para }) => {
         <h2>{name}</h2>
         <p>{para}</p>
       </span>
-      </Container2>
-      
+      </Container2>   
     </Container>
   );
 };
@@ -19,32 +18,23 @@ const MiddleAboutCard = ({ imageUrl, name, para }) => {
 export default MiddleAboutCard;
 
 const Container = styled.div` 
-width: 104px;
-height: 204px;
-margin: 40px; 
   img {
-    width: 104px;
-    height: 104px;
+    width: 6.5rem;
+    height: 6.5rem;
     flex-shrink: 0;
-    border-radius: 1.25rem; /* Convert 20px to rem */
-    margin:0 20px 0 20px ;
+    border-radius: 1.25rem; 
+    margin:0 20px 0 40px ;
     top:-50px;
-    position :relative;
-    @media (max-width: ){
-      height: 104px;
-      flex-shrink: 0;      
-    };
-    @media (max-width: 48px){
-      height: 49px;
-      flex-shrink: 0;      
-    };
-    
+    position: relative;
   }
   span {
+    top:-50px;
+    position: relative;
+    padding-left: 20px;;
     h2 {
       color: #000;
       font-family: Poppins;
-      font-size: 32px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -58,40 +48,40 @@ margin: 40px;
     line-height: normal;
     opacity: 0.6000000238418579;
     max-width: 481px;
-    @media (max-width: 363px){
-      color: #000;
-      font-family: Poppins;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;      
-    };
-    @media (max-width: 267px){
-      color: #000;
-      text-align: center;
-      font-family: Poppins;
-      font-size: 10px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;           
-    };
-
     }
   }
-}`;
+  @media (max-width: 430px){
+    img {
+    width: 3rem;
+    height: 3rem;
+    margin:0 1.5rem 0 2rem ;
+    top:-2.3rem;
+  }
+  span {
+    top:-2.3rem;
+    padding-left: 20px;;
+    h2 {
+      font-size: 0.875rem;
+    }
+    p{
+    font-size: 0.625rem;
+    max-width: 15.6875rem;
+    }}
+  }
+`;
 
 const Container2 = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 201px;
     border-radius: 10px;
     border: 1px solid gray;
-    position :absolute;
-    @media (max-width: 411px){
-      height: 138px;
-      flex-shrink: 0;    
-    };
-    @media (max-width: 282px){
-      height: 109px;
-      flex-shrink: 0;      
-    };    
+    padding-right:5rem;
+    
+  @media (max-width: 430px){
+    max-width: 17.625rem;
+    max-height: 6.8125rem;
+    padding-right:5rem;
+  }
 `;

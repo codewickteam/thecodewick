@@ -40,7 +40,8 @@ const MiddleAbout = () => {
       <Header>
         <div>Why Choose Us</div>
         <p>
-Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.
+          Thank you for considering us as your web developer. We believe that our experience, skills, and 
+          dedication sets us apart and maje the ideal choice for your project.
         </p>
       </Header>
       <CardsContainer>
@@ -88,42 +89,56 @@ const Header = styled.div`
     max-width: 981px;
     text-align: center;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     opacity: 0.699999988079071;
     padding-top: 10px;
-    @media (max-width: 772px){
-      color: #000;
-      text-align: center;
-      font-family: Poppins;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;      
-    };
-    @media (max-width: 318px){
-      color: #000;
-      text-align: center;
-      font-family: Poppins;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      opacity: 0.699999988079071;      
-    };
+  }
+  @media (max-width: 1025px){
+    div {
+    font-size: 2.5rem; 
+  }
+
+  p {
+    max-width: 48.25rem;
+    font-size: 1.25rem;
+    padding-top: 10px;
+  }
+    
+  }
+  @media (max-width: 770px){
+    p {
+    max-width: 41.25rem;
+  }
+  }
+  @media (max-width: 430px){
+    div {
+    font-size: 1.5rem; 
+  }
+
+  p {
+    max-width: 19.25rem;
+    font-size: 0.75rem;
+    padding-top: 10px;
+  }
   }
 
 `;
 
 const CardsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 6.25rem; /* Convert 100px to rem */
-  margin-bottom: 5.25rem; /* Convert 100px to rem */
-  margin-left: 6.125rem; /* Convert 50px to rem */
-  margin-right: 3.125rem; /* Convert 50px to rem */
-  gap:70px;
+  margin-bottom: 2.25rem; /* Convert 100px to rem */
+  gap:5rem;
+  @media (max-width: 430px){
+  margin-top: 4.25rem; /* Convert 100px to rem */
+  margin-bottom: 1.25rem; /* Convert 100px to rem */
+  gap:5rem;
+  }
 `;
