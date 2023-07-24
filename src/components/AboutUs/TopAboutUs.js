@@ -58,6 +58,26 @@ const Container = styled.div`
     font-weight: 600;
     line-height: normal;
     opacity: 0.7; /* No need to convert opacity */
+    @media (max-width: 770px ){
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      opacity: 0.699999988079071;
+    };
+    @media (max-width: 314px ){
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      opacity: 0.699999988079071;
+    };
   }
 `;
 
@@ -70,6 +90,18 @@ const Left = styled.div`
     flex-shrink: 0;
     border-radius: 1.25rem; /* 20px / 16 = 1.25rem */
     padding: 0 1.875rem 0 4.3125rem; /* 0 20px / 16 = 0 1.875rem, 69px / 16 = 4.3125rem */
+    @media (max-width: 388px){
+      height: 292px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    };
+    @media (max-width: 168px){
+      height: 112px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    };
   }
   span {
     display: flex;
@@ -90,6 +122,18 @@ const Left = styled.div`
     font-weight: 600;
     line-height: normal;
     background-color:white;
+    @media (max-width: 160px){
+      height: 52px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 2px solid #000;        
+    };
+    @media (max-width: 47px){
+      height: 15px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #000;            
+    };
   }
 `;
 
@@ -103,4 +147,22 @@ const Paragraph = styled.div`
   opacity: 0.7; /* No need to convert opacity */
   max-width: 62.5rem; /* 1000px / 16 = 62.5rem */
   min-width: 25rem; /* 400px / 16 = 25rem */
+  @media(max-width: 414px){
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.699999988079071;
+  };
+  @media(max-width: 157px){
+    color: #000;
+    font-family: Poppins;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.699999988079071;    
+  };
 `;

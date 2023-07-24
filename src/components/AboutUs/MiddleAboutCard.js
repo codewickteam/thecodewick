@@ -30,6 +30,14 @@ margin: 40px;
     margin:0 20px 0 20px ;
     top:-50px;
     position :relative;
+    @media (max-width: ){
+      height: 104px;
+      flex-shrink: 0;      
+    };
+    @media (max-width: 48px){
+      height: 49px;
+      flex-shrink: 0;      
+    };
     
   }
   span {
@@ -50,6 +58,24 @@ margin: 40px;
     line-height: normal;
     opacity: 0.6000000238418579;
     max-width: 481px;
+    @media (max-width: 363px){
+      color: #000;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;      
+    };
+    @media (max-width: 267px){
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;           
+    };
+
     }
   }
 }`;
@@ -60,4 +86,12 @@ const Container2 = styled.div`
     border-radius: 10px;
     border: 1px solid gray;
     position :absolute;
+    @media (max-width: 411px){
+      height: 138px;
+      flex-shrink: 0;    
+    };
+    @media (max-width: 282px){
+      height: 109px;
+      flex-shrink: 0;      
+    };    
 `;

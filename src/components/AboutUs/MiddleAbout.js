@@ -11,25 +11,25 @@ const data=[
     id: "p1",
     imageUrl: R36,
     name: "Expertise",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
   {
     id: "p2",
     imageUrl: R37,
     name: "Attention to Detail",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
   {
     id: "p3",
     imageUrl: R38,
     name: "Communication",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
   {
     id: "p4",
     imageUrl: R39,
     name: "Customer Service",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
 
 ]
@@ -38,11 +38,9 @@ const MiddleAbout = () => {
   return (
     <Container>
       <Header>
-        <div>Our Process</div>
+        <div>Why Choose Us</div>
         <p>
-          We follow a comprehensive and structured working process to ensure
-          that every project is delivered on time, within budget, and meets the
-          specific needs of the clients.
+Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.
         </p>
       </Header>
       <CardsContainer>
@@ -96,6 +94,25 @@ const Header = styled.div`
     line-height: normal;
     opacity: 0.699999988079071;
     padding-top: 10px;
+    @media (max-width: 772px){
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;      
+    };
+    @media (max-width: 318px){
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      opacity: 0.699999988079071;      
+    };
   }
 
 `;

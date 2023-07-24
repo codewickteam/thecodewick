@@ -120,6 +120,12 @@ const Header = styled.div`
     line-height: normal;
     opacity: 0.699999988079071;
     padding-top: 10px;
+    @media (max-width: 747px){
+      font-size: 20px;
+    };
+    @media (max-width: 326px){
+      font-size: 12px;
+    };
   }
   button {
     color: #000;
@@ -135,6 +141,11 @@ const Header = styled.div`
     border: 2px solid #000;
     background-color:white;
     margin-top:30px;
+    @media (max-width: 241px){
+    };
+    @media (max-width: 118px){
+      height: 38px;
+    }
   }
 `;
 
