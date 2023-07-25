@@ -59,11 +59,14 @@ const Container=styled.div`
     }
 
     .card{
-        border: none
+        max-width:30vw;
+        padding:0.4rem;       
     }
 
     img{
         margin-bottom: 25px;
+        max-width:29vw;
+        max-height:20rem;
     }
    
     .author{
@@ -94,7 +97,7 @@ const Container=styled.div`
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        width: 483px;
+        max-width: 483px;
         margin-bottom: 25px;
         opacity: 0.6000000238418579;
     }
@@ -117,4 +120,38 @@ const Container=styled.div`
         font-weight: 500;
         line-height: normal;
     }
+
+@media (max-width: 430px){
+
+    .card{
+        max-width:300px;
+        padding:0.4rem;       
+    }
+
+    img{
+        margin-bottom: 25px;
+        max-width:17.4rem;
+        max-height:20rem;
+    }
+   
+    .author{
+        font-size: 12px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    .content{
+        font-size: 13px;
+        max-width: 303px;
+    }
+
+    
+
+
+    .btn-text{
+        font-size: 10px;
+    }
+  }
 `

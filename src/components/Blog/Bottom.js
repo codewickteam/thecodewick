@@ -23,7 +23,7 @@ export default function Bottom() {
 }
 
 const Container=styled.div`
-margin: 205px 0 362px 0;
+margin: 205px 1rem 20rem 1rem;
     .flex{
         display: flex;
     }
@@ -48,11 +48,20 @@ margin: 205px 0 362px 0;
     }
 
     .cards{
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 75px;
-        /* justify-content: space-between; */
-        /* gap: 75px; */
+        justify-content:center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin:0 1rem 0 1rem;
     }
+
+  @media (max-width: 430px){
+    margin-bottom: 155px;
+    .header{
+        font-size: 2rem;
+        margin-bottom: 85px;
+    }
+  }
 
 `

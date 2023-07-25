@@ -11,25 +11,25 @@ const data=[
     id: "p1",
     imageUrl: R36,
     name: "Expertise",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
   {
     id: "p2",
     imageUrl: R37,
     name: "Attention to Detail",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
   {
     id: "p3",
     imageUrl: R38,
     name: "Communication",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
   {
     id: "p4",
     imageUrl: R39,
     name: "Customer Service",
-    para: "Thank you for considering us as your web developer. We believe that our experience, skills, and dedication sets us apart and maje the ideal choice for your project.",
+    para: "We have extensive experience in designing & developing websites for clients across various industries.",
   },
 
 ]
@@ -38,11 +38,10 @@ const MiddleAbout = () => {
   return (
     <Container>
       <Header>
-        <div>Our Process</div>
+        <div>Why Choose Us</div>
         <p>
-          We follow a comprehensive and structured working process to ensure
-          that every project is delivered on time, within budget, and meets the
-          specific needs of the clients.
+          Thank you for considering us as your web developer. We believe that our experience, skills, and 
+          dedication sets us apart and maje the ideal choice for your project.
         </p>
       </Header>
       <CardsContainer>
@@ -90,23 +89,57 @@ const Header = styled.div`
     max-width: 981px;
     text-align: center;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     opacity: 0.699999988079071;
     padding-top: 10px;
   }
+  @media (max-width: 1025px){
+    div {
+    font-size: 2.5rem; 
+  }
+
+  p {
+    max-width: 48.25rem;
+    font-size: 1.25rem;
+    padding-top: 10px;
+  }
+    
+  }
+  @media (max-width: 770px){
+    p {
+    max-width: 41.25rem;
+  }
+  }
+  @media (max-width: 430px){
+    margin-top: 0rem;
+    div {
+    font-size: 1.5rem; 
+  }
+
+  p {
+    max-width: 19.25rem;
+    font-size: 0.75rem;
+    padding-top: 10px;
+  }
+  }
 
 `;
 
 const CardsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 6.25rem; /* Convert 100px to rem */
-  margin-bottom: 5.25rem; /* Convert 100px to rem */
-  margin-left: 6.125rem; /* Convert 50px to rem */
-  margin-right: 3.125rem; /* Convert 50px to rem */
-  gap:70px;
+  margin-bottom: 2.25rem; /* Convert 100px to rem */
+  gap:5rem;
+  @media (max-width: 430px){
+  margin-top: 4.25rem; /* Convert 100px to rem */
+  margin-bottom: 1.25rem; /* Convert 100px to rem */
+  gap:5rem;
+  }
 `;

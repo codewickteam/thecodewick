@@ -78,19 +78,49 @@ const BottomAboutUs = () => {
 export default BottomAboutUs;
 
 const Container = styled.div`
-  margin: 1.25rem 0 1.25rem 0; /* Convert 20px to rem */
-  padding: 1.25rem 0 1.25rem 0; /* Convert 20px to rem */
+  margin: 20px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  margin-top: 6.25rem; /* Convert 100px to rem */
+  margin-top: 100px;
   position: relative;
 
   .eLeft {
     position: absolute;
-    bottom: -31.25rem; /* Convert 500px to rem */
-    left: -3.75rem; /* Convert 60px to rem */
+    bottom: -500px;
+    left: -60px;
     z-index: -1;
     pointer-events: none;
+  }
+  @media (max-width: 1025px){
+  margin: 20px 0;
+  padding: 20px 0;
+  margin-top: 100px;
+  .eLeft {
+    bottom: -250px;
+    left: -60px;
+    width:220px;
+  }
+  }
+  @media (max-width: 430px){
+  margin: 20px 0;
+  padding: 20px 0;
+  margin-top: 80px;
+  .eLeft {
+    bottom: -150px;
+    left: -60px;
+    width:150px;
+  }
+  }
+  @media (max-width: 390px){
+    margin: 20px 0;
+  padding: 20px 0;
+  margin-top: 80px;
+  .eLeft {
+    bottom: -150px;
+    left: -60px;
+    width:120px;
+  }
   }
 `;
 
@@ -103,7 +133,7 @@ const Header = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 4rem; /* Convert 64px to rem */
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -118,7 +148,7 @@ const Header = styled.div`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    opacity: 0.699999988079071;
+    opacity: 0.7;
     padding-top: 10px;
   }
   button {
@@ -133,8 +163,76 @@ const Header = styled.div`
     flex-shrink: 0;
     border-radius: 10px;
     border: 2px solid #000;
-    background-color:white;
-    margin-top:30px;
+    background-color: white;
+    margin-top: 30px;
+  }
+  @media (max-width: 1025px){
+    div {
+    font-size: 40px;
+  }
+
+  p {
+    max-width: 747px;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  button {
+    font-size: 22px;
+    width: 241px;
+    height: 78px;
+    margin-top: 30px;
+  }
+  }
+  @media (max-width: 770px){
+    div {
+    font-size: 38px;
+  }
+
+  p {
+    max-width: 690px;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  button {
+    font-size: 20px;
+    width: 221px;
+    height: 70px;
+    margin-top: 30px;
+  }
+  }
+  @media (max-width: 430px){
+    div {
+    font-size: 24px;
+  }
+
+  p {
+    max-width: 326px;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  button {
+    font-size: 8px;
+    width: 118px;
+    height: 38px;
+    margin-top: 30px;
+  }
+  }
+  @media (max-width: 390px){
+    div {
+    font-size: 24px;
+  }
+
+  p {
+    max-width: 326px;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  button {
+    font-size: 8px;
+    width: 118px;
+    height: 38px;
+    margin-top: 30px;
+  }
   }
 `;
 
@@ -142,9 +240,28 @@ const CardsContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 6.25rem; /* Convert 100px to rem */
-  margin-bottom: 15.25rem; /* Convert 100px to rem */
-  margin-left: 3.125rem; /* Convert 50px to rem */
-  margin-right: 3.125rem; /* Convert 50px to rem */
-  gap:70px;
+  margin-top: 100px;
+  margin-bottom: 244px;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 70px;
+  @media (max-width: 1025px){
+  margin-top: 100px;
+  margin-bottom: 140px;
+  margin-left: 25px;
+  margin-right: 50px;
+  gap: 70px;
+  }
+  @media (max-width: 430px){
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  gap: 20px;
+  }
+  @media (max-width: 390px){
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  gap: 20px;
+  }
 `;
