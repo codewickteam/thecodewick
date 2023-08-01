@@ -29,7 +29,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     margin: 2rem 0 7rem 0;
     span{
         display:flex;
