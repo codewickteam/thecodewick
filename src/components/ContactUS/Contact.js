@@ -29,6 +29,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin: 2rem 0 7rem 0;
     span{
         display:flex;
@@ -56,5 +57,26 @@ const Container = styled.div`
     
     
 
+  }
+
+  @media (max-width: 770px){
+    .coutactusForm {
+    margin: 2rem 0 7rem 0;
+    img {
+      width: 20.125rem;
+      height: 20.125rem;
+    }
+  }
+  .cirlceContactusmain{
+    gap:2rem;
+    margin-top: 1rem;;
+  }
+  .cirlceContactus{
+    width: 3rem;
+    height: 3rem;
+      
+    
+
+  }
   }
 `;

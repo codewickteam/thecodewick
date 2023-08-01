@@ -78,4 +78,30 @@ const Container = styled.div`
     margin-top: 4rem;
     cursor: pointer;
   }
+  @media (max-width: 770px){
+    form {
+    width: 20rem;
+    padding-top: 5rem;
+  }
+
+  label {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+
+  button {
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    padding: 8px 38px;
+    margin-top: 3rem;
+    
+  }
+  }
 `;
