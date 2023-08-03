@@ -2,41 +2,14 @@ import React from 'react';
 import styled from "styled-components";
 import HeaderCaseStudy from './HeaderCaseStudy';
 import BlogCaseStudy from './BlogCaseStudy.js';
-import image from "../../assets/Rectangle 48.png";
-
-const data = [
-  {
-    id: 1,
-    date: "Lorem ipsum - 19 Aug 2023",
-    title: 'A Relentless Pursuit of Perfection In Website Design',
-    desc: 'I began to notice that there was a sharp contrast between well made....',
-    imgUrl: image,
-    keywords: ["Design", "Design", "Research", "Research", "Research"]
-  },
-  {
-    id: 2,
-    date: "Lorem ipsum - 19 Aug 2023",
-    title: 'A Relentless Pursuit of Perfection In Website Design',
-    desc: 'I began to notice that there was a sharp contrast between well made....',
-    imgUrl: image,
-    keywords: ["Design", "Design", "Research", "Research", "Research"]
-  },
-  {
-    id: 3,
-    date: "Lorem ipsum - 19 Aug 2023",
-    title: 'A Relentless Pursuit of Perfection In Website Design',
-    desc: 'I began to notice that there was a sharp contrast between well made....',
-    imgUrl: image,
-    keywords: ["Design", "Design", "Research", "Research", "Research"]
-  }
-];
+import { CaseStudydata } from "../../API/data.js";
 
 const Casestudy = () => {
   return (
     <div>
       <HeaderCaseStudy />
       <Container>
-      {data.map(item => (
+      {CaseStudydata.map(item => (
         <BlogCaseStudy
           id={item.id}
           date={item.date}

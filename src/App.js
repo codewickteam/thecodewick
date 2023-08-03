@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs.js";
 import CaseStudy from "./pages/CaseStudy.js";
 import Blog from "./pages/Blog.js";
 import ContactUs from "./pages/ContactUs.js";
+import Admin from "./pages/Admin.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/casestudy" element={<CaseStudy />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
