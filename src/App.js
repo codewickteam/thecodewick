@@ -1,33 +1,43 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.js";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Services from "./pages/Services.js";
-import AboutUs from "./pages/AboutUs.js";
-import CaseStudy from "./pages/CaseStudy.js";
-import Blog from "./pages/Blog.js";
-import ContactUs from "./pages/ContactUs.js";
-import Admin from "./pages/Admin.js";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import AboutUs from './pages/AboutUs';
+import CaseStudy from './pages/CaseStudy';
+import Blog from './pages/Blog';
+import ContactUs from './pages/ContactUs';
+import Admin from './pages/Admin';
+import useAuthentication from './useAuthentication';
 
-function App() {
+const App = () => {
+  const isAuthenticated = useAuthentication();
+
+
   return (
     <div>
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/casestudy" element={<CaseStudy />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/admin" element={<Admin />} />
+
+          {/* Protected admin routes */}
+          {isAuthenticated ? (
+            <Route path="/admin/*" element={<Admin />} />
+          ) : null}
+
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
       </Router>
     </div>
   );
-}
+};
 
 export default App;
