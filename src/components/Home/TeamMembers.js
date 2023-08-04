@@ -1,61 +1,36 @@
-import React from "react";
-import styled from "styled-components";
-import TeamMembersCard from "./TeamMembersCard";
-import Rect17 from '../../assets/Rect17.png';
-import Rect18 from '../../assets/Rect18.png';
-import Rect19 from '../../assets/Rect19.png';
-import eRight from '../../assets/Ellipse 36.png';
-import eLeft from '../../assets/Ellipse 37.png';
-
-const data = [
-  {
-    id: "p1",
-    imageUrl: Rect17,
-    name: "Kartik Sharma",
-    position: "CEO",
-  },
-  {
-    id: "p1",
-    imageUrl: Rect18,
-    name: "Shreya Palit",
-    position: "CEO",
-  },
-  {
-    id: "p1",
-    imageUrl: Rect19,
-    name: "Shivinder Bahl",
-    position: "CEO",
-  },
-];
+import React, { useState } from "react";
+import styled, { css } from "styled-components";
+import { TeamMembersKeyword } from "../../API/data";
 
 const TeamMembers = () => {
+  const [selectedKeyword, setSelectedKeyword] = useState("All");
+
+  const handleKeywordClick = (keyword) => {
+    setSelectedKeyword(keyword);
+  };
+
   return (
     <Container>
       <Header>
         <div>
-          Meet our <span>team</span>
+          Some <span>recent works</span> we are really proud of
         </div>
-        <p>
-          Our team of tech strategists, enterprise architects & transformation
-          experts help harness technology & innovation as a way to reinvent
-          every business.
-        </p>
       </Header>
-      <CardsContainer>
-        {data.map((item) => (
-          <TeamMembersCard
-            key={item.id}
-            imageUrl={item.imageUrl}
-            name={item.name}
-            position={item.position}
-          />
-        ))}
-      </CardsContainer>
-      <img className="eRight" src={eRight} alt="" />
-      <img className="eLeft" src={eLeft} alt="" />
+      <KeywordsContainer>
+          {TeamMembersKeyword.map((item) => (
+            <KeywordButton
+              key={item}
+              selected={item === selectedKeyword}
+              onClick={() => handleKeywordClick(item)}
+            >
+              {item}
+            </KeywordButton>
+          ))}
+        </KeywordsContainer>
     </Container>
   );
 };
+
 
 export default TeamMembers;
 
@@ -64,6 +39,7 @@ const Container = styled.div`
   padding: 20px; 
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 100px; 
   position: relative;
 
@@ -169,6 +145,7 @@ const Container = styled.div`
 `;
 
 const Header = styled.div`
+  max-width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,30 +248,35 @@ const Header = styled.div`
 }
 `;
 
-const CardsContainer = styled.div`
+
+
+const KeywordsContainer = styled.p`
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px; 
-  padding: 10px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+`;
 
-@media (max-width: 1025px){
-  margin-top: 18px; 
-  padding: 10px; 
+const KeywordButton = styled.div`
+  max-width: 80vw;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  cursor: pointer;
+  margin: 2px 15px;
 
-}
-@media (max-width: 770px){
-  margin-top: 10px; 
-  padding: 5px; 
+  ${(props) =>
+    props.selected &&
+    css`
+      opacity: 1;
+      font-weight: bold;
+    `}
 
-}
-@media (max-width: 430px){
-  margin-top: 10px; 
-  padding: 4px; 
+  &:hover {
+    opacity: 1;
+    font-weight: bold;
+  }
 
-}
-@media (max-width: 390px){
-  margin-top: 8px; 
-  padding: 1px; 
-}
-
+  @media (max-width: 430px) {
+    font-size: 0.7rem;
+  }
 `;
