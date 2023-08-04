@@ -1,8 +1,8 @@
 import React from 'react';
 import styled  from 'styled-components';
-import image4 from '../../assets/image4.png';
+import image4 from '../../assets/NodeJS logo.png';
 import image5 from '../../assets/image5.png';
-import image6 from '../../assets/image6.png';
+import image6 from '../../assets/React_JS Developer - Web_Mobile UI_UX Design & Development.png';
 import image7 from '../../assets/image7.png';
 import image8 from '../../assets/image8.png';
 import image9 from '../../assets/image9.png';
@@ -192,6 +192,16 @@ const CardsContainer = styled.div`
   gap: 100px;
   margin-bottom: 50px;
   margin-top: 100px;
+  img {
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+img:hover {
+  transform: scale(1.1); 
+}
 
   @media (max-width: 1025px){
   gap: 80px;

@@ -123,7 +123,7 @@ const Header = styled.div`
     max-width: 1213px;
     text-align: center;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

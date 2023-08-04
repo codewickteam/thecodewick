@@ -24,8 +24,8 @@ const Container = styled.div`
   justify-content: center;
 
   img {
-    width: 130px;
-    height: 130px;
+    width: 10vw;
+    height: 10vw;
     flex-shrink: 0;
     border-radius: 130px;
   }
@@ -34,7 +34,7 @@ const Container = styled.div`
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
