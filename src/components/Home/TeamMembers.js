@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
-import { TeamMembersKeyword } from "../../API/data";
+import { TeamMembersKeyword, TeamMembersCardKeywords } from "../../API/data";
+import TeamMembersCard from "./TeamMembersCard";
 
 const TeamMembers = () => {
   const [selectedKeyword, setSelectedKeyword] = useState("All");
@@ -8,6 +9,11 @@ const TeamMembers = () => {
   const handleKeywordClick = (keyword) => {
     setSelectedKeyword(keyword);
   };
+
+  const filteredData =
+    selectedKeyword === "All"
+      ? TeamMembersCardKeywords
+      : TeamMembersCardKeywords.filter((item) => item.keyword === selectedKeyword);
 
   return (
     <Container>
@@ -17,20 +23,29 @@ const TeamMembers = () => {
         </div>
       </Header>
       <KeywordsContainer>
-          {TeamMembersKeyword.map((item) => (
-            <KeywordButton
-              key={item}
-              selected={item === selectedKeyword}
-              onClick={() => handleKeywordClick(item)}
-            >
-              {item}
-            </KeywordButton>
-          ))}
-        </KeywordsContainer>
+        {TeamMembersKeyword.map((item) => (
+          <KeywordButton
+            key={item}
+            selected={item === selectedKeyword}
+            onClick={() => handleKeywordClick(item)}
+          >
+            {item}
+          </KeywordButton>
+        ))}
+      </KeywordsContainer>
+      <TeamMembersCardContainer>
+        {filteredData.map((item) => (
+          <TeamMembersCard
+            key={item.keyword}
+            imageUrl={item.imgUrl}
+            name={item.title}
+            position={item.keyword}
+          />
+        ))}
+      </TeamMembersCardContainer>
     </Container>
   );
 };
-
 
 export default TeamMembers;
 
@@ -84,7 +99,7 @@ const Container = styled.div`
 
   }
   @media (max-width: 770px){
-  max-height:630px;
+  max-height:680p;
   margin: 20px; 
   padding: 20px; 
   margin-top: 60px; 
@@ -280,3 +295,16 @@ const KeywordButton = styled.div`
     font-size: 0.7rem;
   }
 `;
+
+
+const TeamMembersCardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2vw;
+  max-width: 100vw;
+  margin-top: 3rem;
+  justify-content: center;
+  cursor: pointer;
+`;
+
+

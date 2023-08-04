@@ -79,3 +79,28 @@ export const TeamMembersKeyword = [
   "Video",
   "wellness",
 ];
+
+
+export const TeamMembersCardKeywords = [
+  {
+    keyword: "AI",
+    title: "AI In Website Design",
+    imgUrl: image,
+  },
+  {
+    keyword: "AI",
+    title: "AI In Website Design",
+    imgUrl: image,
+  },
+  {
+    keyword: "B2B",
+    title: "B2B In Website Design",
+    imgUrl: image,
+  },
+  {
+    keyword: "SSO",
+    title: "sso In Website Design",
+    imgUrl: image,
+  }
+
+]

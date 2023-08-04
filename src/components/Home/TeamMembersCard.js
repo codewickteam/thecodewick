@@ -15,29 +15,25 @@ export default TeamMembersCard;
 
 const Container = styled.div`
   margin: 0;
-  width: 440px;
+  width: 300px;
   border: grey;
   background: #fff;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0 0 0;
-  margin-bottom: 100px;
-  margin-top: 50px;
   img {
-    width: 420px;
-    height: 540px;
+    width: 280px;
+    height: 280px;
     flex-shrink: 0;
-    border-radius: 20px;
   }
   h2 {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
   }
   span {
@@ -52,19 +48,17 @@ const Container = styled.div`
   }
 
 @media (max-width: 1025px){
-  max-width: 340px;
-  padding: 20px 0 0 0;
-  margin-bottom: 100px;
-  margin-top: 50px;
+  max-width: 200px;
+
   img {
-    width: 278px;
-    height: 337px;
+    width: 200px;
+    height: 200px;
   }
   h2 {
-    font-size: 26px;
+    font-size: 18px;
   }
   span {
-    font-size: 18px;
+    font-size: 15px;
   }
 
 }
@@ -74,45 +68,16 @@ const Container = styled.div`
   margin-bottom: 100px;
   margin-top: 50px;
   img {
-    width: 208px;
-    height: 237px;
+    width: 150px;
+    height: 150px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
   span {
-    font-size: 13px;
-  }
-
-
-}
-@media (max-width: 430px){
-  max-width: 120px;
-  padding: 20px 0 0 0;
-  margin-bottom: 80px;
-  margin-top: 10px;
-  img {
-    width: 102px;
-    height: 123px;
-  }
-  h2 {
     font-size: 10px;
   }
-  span {
-    font-size: 8px;
-  }
 
-}
-@media (max-width: 390px){
-  max-width: 120px;
-  padding: 20px 0 0 0;
-  margin-bottom: 100px;
-  margin-top: 10px;
-  h2 {
-    font-size: 8px;
-  }
-  span {
-    font-size: 8px;
-  }
+
 }
 `;
