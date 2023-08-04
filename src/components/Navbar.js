@@ -50,7 +50,7 @@ export default function Navbar() {
         <Link className='link' to='/blog'>Blog</Link>
       </div>
 
-      <Link className='btn flex a-center j-center' to='/'>
+      <Link className='btn flex a-center j-center' to='contact'>
         <div className="btn-text flex">
             Contact
         </div>
