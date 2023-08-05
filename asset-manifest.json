@@ -1,32 +1,39 @@
 {
   "files": {
     "main.css": "/static/css/main.9a8809c2.css",
-    "main.js": "/static/js/main.66c75487.js",
+    "main.js": "/static/js/main.c73df191.js",
     "static/media/img_1.png": "/static/media/img_1.467104ca865862448a0e.png",
     "static/media/Rectangle30.png": "/static/media/Rectangle30.dc3a797c4ccbb048465b.png",
     "static/media/img_3.png": "/static/media/img_3.13ba98031f6b12fb6e2d.png",
     "static/media/img_2.png": "/static/media/img_2.975db05a6200d89e2413.png",
     "static/media/Rectangle 48.png": "/static/media/Rectangle 48.f74e24598510c24f2c1e.png",
-    "static/media/Rect17.png": "/static/media/Rect17.0b54c172d2452f9cd9f8.png",
     "static/media/Rectangle 64.png": "/static/media/Rectangle 64.41e1aaf790326a9ed60e.png",
-    "static/media/Rect18.png": "/static/media/Rect18.07058bc881f7e8dcde01.png",
-    "static/media/Rect19.png": "/static/media/Rect19.782a3dda890bbc1d4878.png",
     "static/media/Rectangle 49.png": "/static/media/Rectangle 49.985dc274db5b5fd8b269.png",
-    "static/media/image8.png": "/static/media/image8.1308f63a80eca0fe9777.png",
+    "static/media/image 40.png": "/static/media/image 40.5cc1d97db57b0ab5de6e.png",
+    "static/media/saas.png": "/static/media/saas.8a32a4c5aae2c6385c5d.png",
+    "static/media/Python.png": "/static/media/Python.b0ebf5c5ca3a3aacfb2f.png",
+    "static/media/Java.png": "/static/media/Java.38793de84e455f582bc8.png",
+    "static/media/NodeJS logo.png": "/static/media/NodeJS logo.9a474210dab8301f5c66.png",
+    "static/media/React_JS Developer - Web_Mobile UI_UX Design & Development.png": "/static/media/React_JS Developer - Web_Mobile UI_UX Design & Development.f183c839f4803001e792.png",
+    "static/media/jackines.png": "/static/media/jackines.d71cc54174f89000c690.png",
+    "static/media/octagen.png": "/static/media/octagen.b2ed3514140b44cc0d66.png",
     "static/media/codewick-logo.png": "/static/media/codewick-logo.f59c314b1a61aefeaa89.png",
-    "static/media/Rectangle 46.png": "/static/media/Rectangle 46.034f6a7d69a7bceafabe.png",
+    "static/media/mdb.png": "/static/media/mdb.10fe540d973f65ea1430.png",
+    "static/media/Salesforce.png": "/static/media/Salesforce.e81cb6fb04875950636b.png",
+    "static/media/aws.png": "/static/media/aws.3348db852f80c22ddc08.png",
     "static/media/image 3.png": "/static/media/image 3.688b0b56d9299c254908.png",
-    "static/media/Rectangle 42.png": "/static/media/Rectangle 42.81944e338a51a8fd50e5.png",
+    "static/media/ourprocess4.png": "/static/media/ourprocess4.0feca1bf25f8a507074a.png",
     "static/media/Rectangle 37.png": "/static/media/Rectangle 37.c7fb6bb8c00e1adf18bc.png",
     "static/media/Rectangle 38.png": "/static/media/Rectangle 38.c7fb6bb8c00e1adf18bc.png",
     "static/media/Rectangle 39.png": "/static/media/Rectangle 39.c7fb6bb8c00e1adf18bc.png",
     "static/media/Rectangle 36.png": "/static/media/Rectangle 36.da2724d2d0cb6838487c.png",
+    "static/media/ourprocess2.png": "/static/media/ourprocess2.fb9b5698429108c9926c.png",
     "index.html": "/index.html",
     "main.9a8809c2.css.map": "/static/css/main.9a8809c2.css.map",
-    "main.66c75487.js.map": "/static/js/main.66c75487.js.map"
+    "main.c73df191.js.map": "/static/js/main.c73df191.js.map"
   },
   "entrypoints": [
     "static/css/main.9a8809c2.css",
-    "static/js/main.66c75487.js"
+    "static/js/main.c73df191.js"
   ]
 }
