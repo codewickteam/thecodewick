@@ -78,7 +78,6 @@ const Container = styled.div`
 
 
   @media (max-width: 1025px){
-  max-height:850px;
   margin: 20px; 
   padding: 20px; 
   margin-top: 80px; 
@@ -99,7 +98,7 @@ const Container = styled.div`
 
   }
   @media (max-width: 770px){
-  max-height:680p;
+ 
   margin: 20px; 
   padding: 20px; 
   margin-top: 60px; 
@@ -119,7 +118,7 @@ const Container = styled.div`
   
   }
   @media (max-width: 430px){
-  max-height:400px;
+
   margin: 20px; 
   padding: 20px; 
   margin-top:40px; 
@@ -139,7 +138,7 @@ const Container = styled.div`
 
   }
   @media (max-width: 390px){
-  max-height:360px;
+
   margin: 20px; 
   padding: 20px; 
   margin-top: 60px; 
@@ -298,9 +297,10 @@ const KeywordButton = styled.div`
 
 
 const TeamMembersCardContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:2vw;
   max-width: 100vw;
   margin-top: 3rem;
   justify-content: center;
