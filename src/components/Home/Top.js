@@ -8,7 +8,7 @@ import ellipse34 from "../../assets/Ellipse 34.png";
 export default function Top() {
   return (
     <Container className="wrapper">
-      <div className="comp1 flex a-center j-center flex-col">
+      <div className="comp1 flex a-center j-center flex-col" id="topArrow">
         <div className="title1 flex flex-col a-center">
           <span className="title1-text">Imagine.</span>
           <span className="title1-text">Innovate. Disrupt.</span>
@@ -73,8 +73,8 @@ export default function Top() {
 
         <div className="band4"></div>
 
-        <div className="comp3 flex a-center j-center flex-col">
-          <div className="title3">
+        <div className="comp3 flex a-center j-center flex-col" id="bannerportfolio">
+          <div className="title3" >
             Take a look at our <span className="span3">portfolio</span>
           </div>
 
