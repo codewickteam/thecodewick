@@ -1,25 +1,31 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
-import { TeamMembersKeyword, TeamMembersCardKeywords } from "../../API/data";
-import TeamMembersCard from "./TeamMembersCard";
+import { TeamMembersKeyword} from "../../API/data";
+import { useNavigate } from "react-router-dom";
+// import TeamMembersCard from "./TeamMembersCard";
 
 const TeamMembers = () => {
+  const navigate = useNavigate();
   const [selectedKeyword, setSelectedKeyword] = useState("All");
 
   const handleKeywordClick = (keyword) => {
     setSelectedKeyword(keyword);
   };
 
-  const filteredData =
-    selectedKeyword === "All"
-      ? TeamMembersCardKeywords
-      : TeamMembersCardKeywords.filter((item) => item.keyword === selectedKeyword);
+  // const filteredData =
+  //   selectedKeyword === "All"
+  //     ? TeamMembersCardKeywords
+  //     : TeamMembersCardKeywords.filter((item) => item.keyword === selectedKeyword);
+
+  const handleclicktonavigate = () => {
+    navigate("/contact");
+  }
 
   return (
     <Container>
       <Header>
         <div>
-          Some <span>recent works</span> we are really proud of
+          Industries we are <span>working</span> in
         </div>
       </Header>
       <KeywordsContainer>
@@ -33,7 +39,7 @@ const TeamMembers = () => {
           </KeywordButton>
         ))}
       </KeywordsContainer>
-      <TeamMembersCardContainer>
+      {/* <TeamMembersCardContainer>
         {filteredData.map((item) => (
           <TeamMembersCard
             key={item.keyword}
@@ -42,7 +48,13 @@ const TeamMembers = () => {
             position={item.keyword}
           />
         ))}
-      </TeamMembersCardContainer>
+      </TeamMembersCardContainer> */}
+
+      <ButtonContact>
+        <h2>Ready to get started ?</h2>
+        <p>We maintain a consistent and relentless pursuit of improvement, always pushing ourselves to be better. Our brand embodies authenticity, making us your trusted partner.</p>
+        <button className="contactbtnteam" onClick={handleclicktonavigate}>Contact Us</button>
+      </ButtonContact>
     </Container>
   );
 };
@@ -296,15 +308,146 @@ const KeywordButton = styled.div`
 `;
 
 
-const TeamMembersCardContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap:2vw;
-  max-width: 100vw;
-  margin-top: 3rem;
-  justify-content: center;
-  cursor: pointer;
-`;
+// const TeamMembersCardContainer = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   gap:2vw;
+//   max-width: 100vw;
+//   margin-top: 3rem;
+//   justify-content: center;
+//   cursor: pointer;
+// `;
 
+const ButtonContact = styled.div`
+  width: 80vw;
+  height: 30vh;
+  margin-top: 7vw;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 1vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+
+  & h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1vw;
+    color: #000;
+  }
+
+  & p {
+    width: 60vw;
+    text-align: center;
+    color: #000;
+    opacity: 0.7;
+    padding-top: 1vw;
+    font-size: 16px;
+  }
+
+  & button.contactbtnteam {
+    width: 20vw;
+    height: 5vh;
+    margin-top: 1vw;
+    background-color: rgb(144, 61, 240);;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #6a0000;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9); 
+    }
+  }
+
+
+  @media (max-width: 1025px) {
+    width: 90vw;
+    padding: 12px 24px;
+    font-size: 16px;
+
+    & h2 {
+      font-size: 22px;
+    }
+
+    & p {
+      width: 70vw;
+      font-size: 14px;
+    }
+
+    & button.contactbtnteam {
+      width: 30vw;
+      height: 4vh;
+    }
+  }
+
+  @media (max-width: 770px) {
+    width: 90vw;
+    padding: 10px 20px;
+    font-size: 14px;
+
+    & h2 {
+      font-size: 20px;
+    }
+
+    & p {
+      width: 70vw;
+      font-size: 12px;
+    }
+
+    & button.contactbtnteam {
+      width: 35vw;
+      height: 4vh;
+    }
+  }
+
+  @media (max-width: 430px) {
+    width: 90vw;
+    padding: 8px 16px;
+    font-size: 12px;
+
+    & h2 {
+      font-size: 18px;
+    }
+
+    & p {
+      width: 70vw;
+      font-size: 10px;
+    }
+
+    & button.contactbtnteam {
+      width: 40vw;
+      height: 4vh;
+    }
+  }
+
+  @media (max-width: 390px) {
+    width: 90vw;
+    padding: 6px 12px;
+    font-size: 10px;
+
+    & h2 {
+      font-size: 16px;
+    }
+
+    & p {
+      width: 70vw;
+      font-size: 8px;
+    }
+
+    & button.contactbtnteam {
+      width: 45vw;
+      height: 3.5vh;
+    }
+  }
+`;
 

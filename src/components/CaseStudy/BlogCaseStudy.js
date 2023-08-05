@@ -4,7 +4,7 @@ import styled from "styled-components";
 const BlogCaseStudy = ({ id, date, title, desc, imgUrl, keywords }) => {
   return (
     <Container className={id % 2 === 0 ? "reverse" : ""}>
-      <img src={imgUrl} alt="image" />
+      <img src={imgUrl} alt="imge" />
       <DataContainer>
         <span>{date}</span>
         <h2>{title}</h2>
