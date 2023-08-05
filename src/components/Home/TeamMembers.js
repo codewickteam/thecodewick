@@ -22,7 +22,7 @@ const TeamMembers = () => {
   }
 
   return (
-    <Container>
+    <Container id="ourexpertieshome">
       <Header>
         <div>
           Industries we are <span>working</span> in
@@ -50,7 +50,7 @@ const TeamMembers = () => {
         ))}
       </TeamMembersCardContainer> */}
 
-      <ButtonContact>
+      <ButtonContact id="contacthome">
         <h2>Ready to get started ?</h2>
         <p>We maintain a consistent and relentless pursuit of improvement, always pushing ourselves to be better. Our brand embodies authenticity, making us your trusted partner.</p>
         <button className="contactbtnteam" onClick={handleclicktonavigate}>Contact Us</button>

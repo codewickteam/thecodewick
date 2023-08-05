@@ -90,7 +90,7 @@ const data=[
 
 const MasterInTechnology = () => {
   return (
-    <Container>
+    <Container id='masterInTechnologyhome'>
       <Header>
         <div>
           Master In <span>Trending Technology</span>

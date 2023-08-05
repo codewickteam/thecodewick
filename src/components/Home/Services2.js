@@ -52,7 +52,7 @@ const data = [
 
 const Services2 = () => {
   return (
-    <Container>
+    <Container id="serviceshome">
       <Header>
         <div className="header">
           What <span> we do</span> for our customers
