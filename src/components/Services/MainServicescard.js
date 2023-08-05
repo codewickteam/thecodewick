@@ -1,103 +1,87 @@
 import React from "react";
 import styled from "styled-components";
 
-const MainServicesCard = ({ imageUrl, name }) => {
+const MiddleAboutCard = ({ imageUrl, name, para }) => {
   return (
     <Container>
+      <Container2>
       <img src={imageUrl} alt="Team Member" />
-      <h2>{name}</h2>
+      <span>
+        <h2>{name}</h2>
+        <p>{para}</p>
+      </span>
+      </Container2>   
     </Container>
   );
 };
 
-export default MainServicesCard;
+export default MiddleAboutCard;
 
-const Container = styled.div`
-  width: 465px;
-  height: 336px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  border: 2px solid #afadad;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+const Container = styled.div` 
   img {
-    width: 10vw;
-    height: 10vw;
+    width: 6.5rem;
+    height: 6.5rem;
     flex-shrink: 0;
-    border-radius: 130px;
+    border-radius: 1.25rem; 
+    margin:0 20px 0 40px ;
+    top:-50px;
+    background-color: white;
+    position: relative;
   }
-
-  h2 {
-    color: #000;
-    text-align: center;
+  span {
+    top:-50px;
+    position: relative;
+    padding-left: 20px;;
+    h2 {
+      color: #000;
+      font-family: Poppins;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    p{
+      color: #000;
     font-family: Poppins;
-    font-size: 2vw;
+    font-size: 1.1rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
-    margin-top: 15px;
-  }
-
-
-  @media (max-width: 1025px){
-  width: 350px;
-  height: 300px;
-  
-  img {
-    width: 100px;
-    height: 100px;
-  }
-
-  h2 {
-    font-size: 26px;
-    margin-top: 15px;
-  }
-
-  }
-  @media (max-width: 770px){
-  width: 290px;
-  height: 220px;
-  
-  img {
-    width: 80px;
-    height: 80px;
-  }
-
-  h2 {
-    font-size: 21px;
-    margin-top: 15px;
-  }
-
+    opacity: 0.6000000238418579;
+    }
   }
   @media (max-width: 430px){
-    width: 250px;
-    height: 180px;
-  
-  img {
-    width: 60px;
-    height: 60px;
+    img {
+    width: 3rem;
+    height: 3rem;
+    margin:0 1.5rem 0 2rem ;
+    top:-2.1rem;
   }
+  span {
+    top:-2.2rem;
+    padding-left: 20px;;
+    h2 {
+      font-size: 0.875rem;
+    }
+    p{
+    font-size: 0.625rem;
+    width: 17.625rem;
+    }}
+  }
+`;
 
-  h2 {
-    font-size: 19px;
-    margin-top: 15px;
-  }
-  }
-  @media (max-width: 390px){
-    width: 200px;
-    height: 150px;
-  
-  img {
-    width: 50px;
-    height: 50px;
-  }
-
-  h2 {
-    font-size: 15px;
-    margin-top: 15px;
-  }
+const Container2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    max-height: 281px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-right:5rem;
+    
+  @media (max-width: 430px){
+    max-width: 19.625rem;
+    max-height: 8.8125rem;
+    padding-right:5rem;
   }
 `;

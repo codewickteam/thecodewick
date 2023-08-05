@@ -1,53 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 import ServicesCard from "./MainServicescard";
-import Ellipse13 from '../../assets/Ellipse 13.png'
-import Ellipse14 from '../../assets/Ellipse 14.png'
-import Ellipse15 from '../../assets/Ellipse 16.png'
-import Ellipse16 from '../../assets/Ellipse 16.png'
-import Ellipse17 from '../../assets/Ellipse 17.png'
-import Ellipse18 from '../../assets/Ellipse 18.png'
-import Ellipse19 from '../../assets/Ellipse 19.png'
 import quo from '../../assets/quo.png';
-
-
-const data = [
-  {
-    id: "p1",
-    imageUrl: Ellipse13,
-    name: "Web Development",
-  },
-  {
-    id: "p2",
-    imageUrl: Ellipse14,
-    name: "App Development",
-  },
-  {
-    id: "p3",
-    imageUrl: Ellipse15,
-    name: "Devops Development",
-  },
-  {
-    id: "p4",
-    imageUrl: Ellipse16,
-    name: "E-Commerce Solutions",
-  },
-  {
-    id: "p5",
-    imageUrl: Ellipse17,
-    name: "Digital Transformation",
-  },
-  {
-    id: "p6",
-    imageUrl: Ellipse18,
-    name: "Cloud Computing",
-  },
-  {
-    id: "p7",
-    imageUrl: Ellipse19,
-    name: "Database Management",
-  },
-];
+import {MainServicesdata} from '../../API/data';
 
 
 const MainServices = () => {
@@ -66,11 +21,12 @@ const MainServices = () => {
         </Qotation>
       </Header>
       <CardsContainer>
-        {data.map((item) => (
+        {MainServicesdata.map((item) => (
           <ServicesCard
             key={item.id}
             imageUrl={item.imageUrl}
             name={item.name}
+            para={item.para}
           />
         ))}
       </CardsContainer>
@@ -195,12 +151,21 @@ const Header = styled.div`
 `;
 
 const CardsContainer = styled.div`
-  padding-top: 80px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
+  align-items: center;
+  margin-top: 6.25rem; /* Convert 100px to rem */
+  margin-bottom: 2.25rem; /* Convert 100px to rem */
+  gap:5rem;
+  @media (max-width: 430px){
+  margin-top: 4.25rem; /* Convert 100px to rem */
+  margin-bottom: 1.25rem; /* Convert 100px to rem */
+  gap:5rem;
+  }
 `;
+
 
 const Qotation = styled.div`
   display: flex;
