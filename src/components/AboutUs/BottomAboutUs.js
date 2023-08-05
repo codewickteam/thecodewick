@@ -1,52 +1,79 @@
 import React from "react";
 import styled from "styled-components";
-import Rect41 from "../../assets/Rectangle 41.png";
-import Rect42 from "../../assets/Rectangle 42.png";
-import Rect43 from "../../assets/Rectangle 43.png";
-import Rect44 from "../../assets/Rectangle 44.png";
-import Rect45 from "../../assets/Rectangle 45.png";
-import Rect46 from "../../assets/Rectangle 46.png";
+import Rect41 from "../../assets/ourprocess1.png";
+import Rect42 from "../../assets/ourprocess2.png";
+import Rect43 from "../../assets/ourprocess3.png";
+import Rect44 from "../../assets/ourprocess4.png";
+
 import eLeft from "../../assets/Ellipse 37.png";
 import BottomAboutUsCard from "./BottomAboutUsCard";
 
+// const data = [
+//   {
+//     id: "p1",
+//     imageUrl: Rect41,
+//     name: "Discovery",
+//     para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
+//   },
+//   {
+//     id: "p2",
+//     imageUrl: Rect44,
+//     name: "Planning",
+//     para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
+//   },
+//   {
+//     id: "p3",
+//     imageUrl: Rect42,
+//     name: "Design",
+//     para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
+//   },
+//   {
+//     id: "p4",
+//     imageUrl: Rect45,
+//     name: "Development",
+//     para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
+//   },
+//   {
+//     id: "p5",
+//     imageUrl: Rect43,
+//     name: "Testing",
+//     para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
+//   },
+//   {
+//     id: "p6",
+//     imageUrl: Rect46,
+//     name: "Launch",
+//     para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
+//   },
+// ];
+
 const data = [
-  {
-    id: "p1",
-    imageUrl: Rect41,
-    name: "Discovery",
-    para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
-  },
-  {
-    id: "p2",
-    imageUrl: Rect44,
-    name: "Planning",
-    para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
-  },
-  {
-    id: "p3",
-    imageUrl: Rect42,
-    name: "Design",
-    para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
-  },
-  {
-    id: "p4",
-    imageUrl: Rect45,
-    name: "Development",
-    para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
-  },
-  {
-    id: "p5",
-    imageUrl: Rect43,
-    name: "Testing",
-    para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
-  },
-  {
-    id: "p6",
-    imageUrl: Rect46,
-    name: "Launch",
-    para: "We take the time to get to know my clients & their businesses. We gather information about their goals, target audience, and competitiors.",
-  },
-];
+    {
+      id: "p1",
+      imageUrl: Rect41,
+      name: "1. Contact Us",
+      para: "Fill the contact form protected by NDA, book a calendar and schedule a Zoom Meeting with our experts",
+    },
+    {
+      id: "p2",
+      imageUrl: Rect42,
+      name: "2. Get Consultation",
+      para: "Get on a call with our team to know the feasibility of your project idea.",
+    },
+    {
+      id: "p1",
+      imageUrl: Rect44,
+      name: "3.  Get Estimate",
+      para: "Based on the project requirements, We share a project proposal budget and timeline estimates",
+    },
+    {
+      id: "p1",
+      imageUrl: Rect43,
+      name: "4. Project Kickoff",
+      para: "Once the project is signed, we bring together a team from a range of disciplines to kick start your project",
+    },
+  ]
+
 
 const BottomAboutUs = () => {
   return (
