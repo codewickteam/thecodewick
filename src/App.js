@@ -10,6 +10,7 @@ import Blog from './pages/Blog';
 import ContactUs from './pages/ContactUs';
 import Admin from './pages/Admin';
 import useAuthentication from './useAuthentication';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const App = () => {
   const isAuthenticated = useAuthentication();
@@ -19,6 +20,7 @@ const App = () => {
     <div>
       <Router>
         <Navbar />
+          <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />

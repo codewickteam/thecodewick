@@ -28,8 +28,8 @@ function Footer() {
       <Section>
         <p>Company</p>
         <Link to="/">Home</Link>
-        <Link to="/">About Us</Link>
-        <Link to="/">Services</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/services">Services</Link>
         <Link to="/">Pricing</Link>
         <Link to="/">Integrations</Link>
       </Section>

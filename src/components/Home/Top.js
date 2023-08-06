@@ -4,6 +4,9 @@ import styled from "styled-components";
 import Banner from "./Banner";
 import ellipse35 from "../../assets/Ellipse 35.png";
 import ellipse34 from "../../assets/Ellipse 34.png";
+import blob1 from '../../assets/images/blobanimation.svg'
+import blob2 from '../../assets/images/blobanimation2.svg'
+import blob3 from '../../assets/images/blobanimation3.svg'
 
 export default function Top() {
   return (
@@ -34,23 +37,44 @@ export default function Top() {
         </div>
 
         <div className="stats2">
-          <div className="flex flex-col a-center">
-            <div className="red-ring flex j-center a-center">
+
+          
+          <div className="blob-container flex">
+
+          <div className="flex a-center j-center">
+            <img className="blob-ring" src={blob1} alt="" />
+            <div className="blob-text">100+</div>
+            <div className="blob-title">Projects Launched</div>
+          </div>
+
+          <div className="flex a-center j-center">
+            <img className="blob-ring" src={blob2} alt="" />
+            <div className="blob-text">20+</div>
+            <div className="blob-title">Years of Experience</div>
+          </div>
+
+          <div className="flex a-center j-center">
+            <img className="blob-ring" src={blob3} alt="" />
+            <div className="blob-text">92+</div>
+            <div className="blob-title">Client Retention</div>
+          </div>
+
+            {/* <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
                 <div className="ring-text-left">100+</div>
               </div>
             </div>
-            <div className="stats-txt">Projects Launched</div>
+            <div className="stats-txt">Projects Launched</div> */}
           </div>
 
-          <div className="flex flex-col a-center">
+          {/* <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
                 <div className="ring-text-left">20+</div>
               </div>
             </div>
             <div className="stats-txt">Years of Experience</div>
-          </div>
+          </div> */}
 
           {/* <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
@@ -61,17 +85,17 @@ export default function Top() {
             <div className="stats-txt">Dedicated Developers</div>
           </div> */}
 
-          <div className="flex flex-col a-center">
+          {/* <div className="flex flex-col a-center">
             <div className="red-ring flex j-center a-center">
               <div className="white-ring flex a-center j-center">
                 <div className="ring-text-right">92%</div>
               </div>
             </div>
             <div className="stats-txt">Client Retention</div>
-          </div>
+          </div> */}
         </div>
 
-        <div className="band4"></div>
+        {/* <div className="band4"></div> */}
 
         <div className="comp3 flex a-center j-center flex-col" id="bannerportfolio">
           <div className="title3" >
@@ -80,9 +104,9 @@ export default function Top() {
 
           <Banner />
 
-          <Link className="btn3 flex a-center j-center" to="/">
+          {/* <Link className="btn3 flex a-center j-center" to="/">
             <div className="btn-text3">Check Out</div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </Container>
@@ -112,6 +136,38 @@ const Container = styled.div`
 
   .comp1 {
     padding-top: 195px;
+  }
+  .blob-container{
+    gap: 30px;
+  }
+  .blob-ring{
+    width: 400px;
+    /* position: absolute; */
+  }
+  .blob-title {
+    position: absolute;
+    padding-top: 370px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 37px;
+  }
+  .blob-text {
+    position: absolute;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #fff 0%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .ellipse34 {
     position: absolute;
