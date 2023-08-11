@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "../../assets/images/sizar-fashion.png";
 import img2 from "../../assets/images/sizar.png";
-import img3 from "../../assets/images/img_3.png";
+import img3 from "../../assets/images/skybags.png";
 
 const Banner = () => {
   const start = [img1, img2, img3];

@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const FormContactus = () => {
+
+  const emailAddress = 'contact@thecodewick.com';
+  const subject = 'Query';
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSendEmail = () => {
+      const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+  };
+
   return (
     <Container>
       <form>
         <label htmlFor="name">Your Name:</label>
         <input
+          value={name} onChange={(e) => setName(e.target.value)}
           type="text"
           id="name"
           placeholder="Type something if you want..."
           required
-        />
+        /> 
 
         <label htmlFor="email">Your Email:</label>
         <input
+          value={email} onChange={(e) => setEmail(e.target.value)}
           type="email"
           id="email"
           placeholder="Type something if you want..."
@@ -23,13 +39,14 @@ const FormContactus = () => {
 
         <label htmlFor="message">Your Message:</label>
         <textarea
+          value={message} onChange={(e) => setMessage(e.target.value)}
           id="message"
           rows="4"
           placeholder="Type something if you want..."
           required
         />
 
-        <button type="submit">Submit</button>
+        <button type="button" onClick={handleSendEmail}>Submit</button>
       </form>
     </Container>
   );
